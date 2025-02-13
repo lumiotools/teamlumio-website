@@ -283,7 +283,7 @@ export function Features({
                 autoPlay
                 muted
                 loop
-                controls={false}
+                // controls
                 // poster={`https://picsum.photos/seed/${activeVideo}/1920/1080`}
               >
                 <source
@@ -295,11 +295,6 @@ export function Features({
               {/* <div className="absolute inset-0 flex items-center justify-center bg-black/50">
               <PlayIcon className="w-16 h-16 text-white" />
             </div> */}
-              <style jsx>{`
-                video::-webkit-media-controls {
-                  display: none !important;
-                }
-              `}</style>
             </div>
           </Card>
         </motion.div>
