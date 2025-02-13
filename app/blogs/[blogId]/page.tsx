@@ -7,6 +7,7 @@ import { useParams } from "next/navigation";
 import  ReactMarkdown  from 'react-markdown';
 import {motion} from 'framer-motion';
 import Link from 'next/link'
+import { notFound } from "next/navigation"
 
 export default function BlogPost() {
   // const router = useRouter();
@@ -16,6 +17,10 @@ export default function BlogPost() {
   // Find the blog post based on the ID
   const post = blogPosts.find((post) => post.id === blogId);
   console.log(post, blogId);
+
+  if(!post){
+    notFound();
+  }
   
   return (
     <div className="min-h-screen bg-background">
