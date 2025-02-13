@@ -283,7 +283,7 @@ export function Features({
                 autoPlay
                 muted
                 loop
-                // controls
+                controls={false}
                 // poster={`https://picsum.photos/seed/${activeVideo}/1920/1080`}
               >
                 <source
