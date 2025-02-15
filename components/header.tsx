@@ -72,7 +72,7 @@ export function Header() {
         </div>
         <div className="hidden lg:flex items-center gap-4">
           <Link
-            href="https://calendar.app.google/y7JF4YKa7uBkyxr18"
+            href="https://calendar.app.google/Zie4xPmv4pMCyTa99"
             target="_blank"
           >
             <Button>Let&apos;s Talk</Button>

@@ -40,7 +40,7 @@ export function CTA() {
             <div className="flex flex-col items-center gap-4 w-full">
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="https://calendar.app.google/y7JF4YKa7uBkyxr18"
+                  href="https://calendar.app.google/Zie4xPmv4pMCyTa99"
                   target="_blank"
                 >
                   <Button
