@@ -47,8 +47,8 @@ export function Testimonials() {
       quote:
         "These guys are good - really sharp and understand complex business nuances, which is important in logistics. They are 100x engineers and know how to deliver silly good solutions fast.",
       author: "Orchestro AI",
-      position: "Logistics Company based in California",
-      company: "",
+      position: "",
+      company: "Logistics Company based in California",
       image: "/images/logos/orchestro.png",
     },
 
@@ -67,7 +67,7 @@ export function Testimonials() {
       open={!!activeVideo}
       onOpenChange={(isOpen) => !isOpen && setActiveVideo(null)}
     >
-      <section className="py-20  bg-accent/50" id="testimonials">
+      <section className="py-20 bg-background" id="testimonials">
         <div className="container px-4">
           <motion.div
             initial={{ opacity: 0, y: 150 }}
@@ -136,7 +136,7 @@ export function Testimonials() {
                       <img
                         src={testimonial.image || "/placeholder.svg"}
                         alt={testimonial.author || testimonial.company}
-                        className="h-12 w-12 rounded-full"
+                        className="h-12 w-12 rounded-full object-contain"
                       />
                       <div>
                         {testimonial.author && (

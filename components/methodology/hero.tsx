@@ -42,8 +42,8 @@ export const MethodologyHero = () => {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing"
                 target="_blank"
               >
-                <Button size="lg" className="w-[240px]">
-                  Book a Free AI Audit Today
+                <Button size="lg" className="w-full">
+                  Book a Free AI Consultation Today
                   <ArrowRightIcon className="ml-1 h-4 w-4" />
                 </Button>
               </Link>

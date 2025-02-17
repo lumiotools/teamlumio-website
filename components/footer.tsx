@@ -35,7 +35,7 @@ export function Footer() {
     ],
     resources: [
       {
-        label: "Contact Us",
+        label: "Email Us",
         href: "mailto:contact@teamlumio.ai",
       },
       {

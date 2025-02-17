@@ -17,11 +17,11 @@ const HomePage = () => {
     <>
       <Hero setIsChatBotOpen={setIsChatBotOpen}/>
       <Features
-        isChatBotOpen={isChatBotOpen}
-        setIsChatBotOpen={setIsChatBotOpen}
+        // isChatBotOpen={isChatBotOpen}
+        // setIsChatBotOpen={setIsChatBotOpen}
       />
-      <AboutUs />
       <Testimonials />
+      <AboutUs />
       <Benefits />
       <TechPlatforms />
       <HowItWorks />

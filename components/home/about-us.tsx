@@ -102,7 +102,7 @@ export function AboutUs() {
   const scrollCompanies = [...awards, ...awards];
 
   return (
-    <section className="py-20 bg-background" id="about">
+    <section className="py-20 bg-accent/50" id="about">
       <div className="container px-4">
         <div className="max-w-5xl mx-auto">
           <motion.div

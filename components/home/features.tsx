@@ -12,19 +12,21 @@ import {
   CpuIcon,
   ChevronRightIcon,
   ChevronDownIcon,
-  Mic,
-  MessageSquare,
+  // Mic,
+  // MessageSquare,
 } from "lucide-react";
 import { VoiceAgentModal } from "./voice-agent-modal";
 import { motion } from "framer-motion";
 
-export function Features({
-  isChatBotOpen,
-  setIsChatBotOpen,
-}: {
-  isChatBotOpen: boolean;
-  setIsChatBotOpen: (isOpen: boolean) => void;
-}) {
+export function Features(
+//   {
+//   isChatBotOpen,
+//   setIsChatBotOpen,
+// }: {
+//   isChatBotOpen: boolean;
+//   setIsChatBotOpen: (isOpen: boolean) => void;
+// }
+) {
   const [activeVideo, setActiveVideo] = useState(0);
   const [expandedCapability, setExpandedCapability] = useState<number | null>(
     null
@@ -90,7 +92,8 @@ export function Features({
     },
     {
       title: "Voice AI",
-      description: "Automate voice based processes such as phone calls with an AI voice agent.",
+      description:
+        "Automate voice based processes such as phone calls with an AI voice agent.",
       videoUrl: "/videos/features-voice-and-video-ai.mp4",
     },
     {
@@ -103,8 +106,86 @@ export function Features({
   return (
     <section className="py-20 bg-accent/50" id="features">
       <div className="container px-4">
+        {/* Video Showcase Section */}
+        <div className="text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 100 }} // Starts below the screen with zero opacity
+            whileInView={{
+              opacity: 1, // Fade in
+              y: 0, // Slide to its natural position
+            }}
+            transition={{
+              duration: 1, // Adjust the duration for the slide effect
+              ease: "easeOut",
+            }}
+            viewport={{ once: true }}
+            className="text-3xl font-bold tracking-tight mb-6"
+          >
+            Lumio Use Cases
+          </motion.h2>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeOut",
+          }}
+          viewport={{ once: true }}
+        >
+          <Card className="w-auto max-w-[960px] mx-auto overflow-hidden">
+            {/* Video Selection Buttons */}
+            <div className="flex flex-wrap gap-2 p-4 border-b">
+              {videoShowcase.map((video, index) => (
+                <Button
+                  key={index}
+                  variant={activeVideo === index ? "default" : "outline"}
+                  onClick={() => setActiveVideo(index)}
+                  className="flex-1"
+                  id={`sskeqp_${index}`}
+                >
+                  {video.title}
+                </Button>
+              ))}
+            </div>
+
+            {/* Description */}
+            <div className="px-6 py-3 bg-muted/50">
+              <p className="text-sm text-primary font-medium">
+                {videoShowcase[activeVideo].description}
+              </p>
+            </div>
+
+            {/* Video container */}
+            <div className="relative bg-accent">
+              <video
+                key={activeVideo}
+                className="w-full aspect-video object-cover scale-x-[1.01]"
+                autoPlay
+                muted
+                loop
+                // controls
+                // poster={`https://picsum.photos/seed/${activeVideo}/1920/1080`}
+              >
+                <source
+                  src={videoShowcase[activeVideo].videoUrl}
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              {/* <div className="absolute inset-0 flex items-center justify-center bg-black/50">
+              <PlayIcon className="w-16 h-16 text-white" />
+            </div> */}
+            </div>
+          </Card>
+        </motion.div>
+
         {/* New Capabilities Section */}
-        <div className="mb-20">
+        <div className="mt-20">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{
@@ -221,86 +302,8 @@ export function Features({
           </div>
         </div>
 
-        {/* Video Showcase Section */}
-        <div className="text-center mb-8">
-          <motion.h2
-            initial={{ opacity: 0, y: 100 }} // Starts below the screen with zero opacity
-            whileInView={{
-              opacity: 1, // Fade in
-              y: 0, // Slide to its natural position
-            }}
-            transition={{
-              duration: 1, // Adjust the duration for the slide effect
-              ease: "easeOut",
-            }}
-            viewport={{ once: true }}
-            className="text-3xl font-bold tracking-tight mb-6"
-          >
-            Lumio Use Cases
-          </motion.h2>
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 0.5,
-            ease: "easeOut",
-          }}
-          viewport={{ once: true }}
-        >
-          <Card className="w-auto max-w-[960px] mx-auto overflow-hidden">
-            {/* Video Selection Buttons */}
-            <div className="flex flex-wrap gap-2 p-4 border-b">
-              {videoShowcase.map((video, index) => (
-                <Button
-                  key={index}
-                  variant={activeVideo === index ? "default" : "outline"}
-                  onClick={() => setActiveVideo(index)}
-                  className="flex-1"
-                  id={`sskeqp_${index}`}
-                >
-                  {video.title}
-                </Button>
-              ))}
-            </div>
-
-            {/* Description */}
-            <div className="px-6 py-3 bg-muted/50">
-              <p className="text-sm text-primary font-medium">
-                {videoShowcase[activeVideo].description}
-              </p>
-            </div>
-
-            {/* Video container */}
-            <div className="relative bg-accent">
-              <video
-                key={activeVideo}
-                className="w-full aspect-video object-cover scale-x-[1.01]"
-                autoPlay
-                muted
-                loop
-                // controls
-                // poster={`https://picsum.photos/seed/${activeVideo}/1920/1080`}
-              >
-                <source
-                  src={videoShowcase[activeVideo].videoUrl}
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-              {/* <div className="absolute inset-0 flex items-center justify-center bg-black/50">
-              <PlayIcon className="w-16 h-16 text-white" />
-            </div> */}
-            </div>
-          </Card>
-        </motion.div>
-
         {/* AI Action Section */}
-        <div className="pt-20" id="demo">
+        {/* <div className="pt-20" id="demo">
           <motion.div
             initial={{ opacity: 0, y: 100 }} // Starts below the screen with zero opacity
             whileInView={{
@@ -339,7 +342,7 @@ export function Features({
               </div>
             </div>
           </motion.div>
-        </div>
+        </div> */}
       </div>
       <VoiceAgentModal
         isOpen={isVoiceModalOpen}

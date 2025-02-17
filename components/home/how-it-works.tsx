@@ -52,7 +52,7 @@ export function HowItWorks() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h2 className="text-3xl font-bold tracking-tight mb-4">
-            Get Your Free AI Audit
+            Get Your Free AI Consultation
           </h2>
           <p className="text-lg text-muted-foreground">
             Discover how AI can transform your business in three simple steps.
@@ -127,7 +127,7 @@ export function HowItWorks() {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                   <div>
                     <h3 className="text-xl font-semibold mb-2">
-                      Book Your Free AI Audit Today
+                      Book Your Free AI Consultation Today
                     </h3>
                     <p className="text-primary-foreground/80">
                       Let&apos;s discuss how AI can accelerate your business
@@ -143,7 +143,7 @@ export function HowItWorks() {
                       variant="secondary"
                       className="whitespace-nowrap"
                     >
-                      Get Your Free AI Audit
+                      Get Your Free AI Consultation
                       <ArrowRightIcon className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>

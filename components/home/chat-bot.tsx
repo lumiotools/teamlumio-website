@@ -33,11 +33,11 @@ export default function ChatBot({
   const chatEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowWelcome(false);
-    }, 5000);
+    // const timer = setTimeout(() => {
+      setShowWelcome(true);
+    // }, 5000);
 
-    return () => clearTimeout(timer);
+    // return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -119,8 +119,8 @@ export default function ChatBot({
       />
 
       {showWelcome && (
-        <div className="fixed bottom-20 right-4 bg-white rounded-lg shadow-lg p-4 max-w-[200px] animate-fade-in">
-          <p className="text-sm">Hello! Feel free to ask me...</p>
+        <div className="fixed bottom-20 right-4 bg-white rounded-lg shadow-lg p-4 max-w-[200px] animate-fade-in ">
+          <p className="text-sm">Hello! Feel free to ask me anything about Lumio or...</p>
         </div>
       )}
 

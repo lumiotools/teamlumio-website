@@ -20,9 +20,9 @@ export function Header() {
   const router = useRouter();
 
   const navItems = [
-    { label: "Solutions", href: "/#features" },
-    { label: "About", href: "/#about" },
+    { label: "About US", href: "/#about" },
     { label: "Methodology", href: "/methodology" },
+    { label: "Solutions", href: "/#features" },
     { label: "Testimonials", href: "/#testimonials" },
     { label: "Blogs", href: "/blogs" },
     { label: "Careers", href: "/careers" },
@@ -73,10 +73,10 @@ export function Header() {
         </div>
         <div className="hidden lg:flex items-center gap-4">
           <Link
-            href="https://calendar.app.google/Zie4xPmv4pMCyTa99"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing"
             target="_blank"
           >
-            <Button>Get Your Free AI Audit</Button>
+            <Button>Get Your Free AI Consultation</Button>
           </Link>
         </div>
         <button
@@ -103,7 +103,12 @@ export function Header() {
               </Link>
             ))}
             <div className="flex flex-col gap-2 pt-4 border-t">
-              <Button>Get Your Free AI Audit</Button>
+            <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing"
+            target="_blank"
+          >
+            <Button>Get Your Free AI Consultation</Button>
+          </Link>
             </div>
           </nav>
         </div>
