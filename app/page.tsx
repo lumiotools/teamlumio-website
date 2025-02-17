@@ -16,12 +16,12 @@ const HomePage = () => {
   return (
     <>
       <Hero setIsChatBotOpen={setIsChatBotOpen}/>
-      <Testimonials />
+      <AboutUs />
       <Features
         isChatBotOpen={isChatBotOpen}
         setIsChatBotOpen={setIsChatBotOpen}
       />
-      <AboutUs />
+      <Testimonials />
       <Benefits />
       <TechPlatforms />
       <HowItWorks />

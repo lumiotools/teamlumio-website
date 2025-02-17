@@ -20,10 +20,10 @@ export function Header() {
   const router = useRouter();
 
   const navItems = [
-    { label: "Testimonials", href: "/#testimonials" },
-    { label: "Solutions", href: "/#features" },
     { label: "About", href: "/#about" },
     { label: "Methodology", href: "/methodology" },
+    { label: "Solutions", href: "/#features" },
+    { label: "Testimonials", href: "/#testimonials" },
     { label: "Blogs", href: "/blogs" },
     { label: "Careers", href: "/careers" },
   ];

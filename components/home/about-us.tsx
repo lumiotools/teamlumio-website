@@ -28,6 +28,11 @@ export function AboutUs() {
       logo: "/images/logos/amazon.webp",
     },
     {
+      name:"Porsche",
+      logo:"/images/logos/porsche logo.jpg",
+      className: "py-2 sm:py-1",
+    },
+    {
       name: "Cornell University",
       logo: "/images/logos/Cornell logo.png",
     },
@@ -46,6 +51,12 @@ export function AboutUs() {
     {
       name: "Harvard",
       logo: "/images/logos/harvard.png",
+    },
+   
+    {
+      name:"Yale Univeristy",
+      logo:"/images/logos/yale university.png",
+      className: "sm:max-h-40 sm:max-w-40 pt-1 max-w-20 max-h-40 ",
     },
   ];
 
@@ -75,7 +86,7 @@ export function AboutUs() {
     {
       name: "New Atlas",
       logo: "/images/logos/new atlas.svg",
-      className: "max-h-20 max-w-40 object-cover w-full h-[32px] pt-1",
+      className: "max-h-10 max-w-20 object-cover w-full h-[32px] pt-1",
     },
     {
       name: "Wowtale",

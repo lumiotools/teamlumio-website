@@ -236,7 +236,7 @@ export function Features({
             viewport={{ once: true }}
             className="text-3xl font-bold tracking-tight mb-6"
           >
-            Examples of AI Solutions We&apos;ve Built Previously
+            Lumio Use Cases
           </motion.h2>
         </div>
 
