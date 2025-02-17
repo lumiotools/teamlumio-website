@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon } from "lucide-react";
+// import { ArrowRightIcon } from "lucide-react";
 import { VoiceAgentModal } from "@/components/home/voice-agent-modal";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -59,7 +59,7 @@ export function CTA() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full sm:w-auto w-[200px] bg-white text-primary hover:bg-white/90"
+                    className="w-full sm:w-auto bg-white text-primary hover:bg-white/90"
                   >
                     Get Your Free AI Audit
                   </Button>
