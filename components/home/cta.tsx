@@ -61,7 +61,7 @@ export function CTA() {
                     variant="outline"
                     className="w-full sm:w-auto bg-transparent hover:text-white text-white border-white hover:bg-white/10"
                   >
-                    Get a Free AI Audit
+                    Get Your Free AI Audit
                   </Button>
                 </Link>
                 {/* <Button

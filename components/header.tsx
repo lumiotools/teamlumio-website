@@ -75,7 +75,7 @@ export function Header() {
             href="https://calendar.app.google/Zie4xPmv4pMCyTa99"
             target="_blank"
           >
-            <Button>Let&apos;s Talk</Button>
+            <Button>Meet with Us</Button>
           </Link>
         </div>
         <button
@@ -102,7 +102,7 @@ export function Header() {
               </Link>
             ))}
             <div className="flex flex-col gap-2 pt-4 border-t">
-              <Button>Let&apos;s Talk</Button>
+              <Button>Meet with Us</Button>
             </div>
           </nav>
         </div>

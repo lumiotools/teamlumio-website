@@ -143,7 +143,7 @@ export function HowItWorks() {
                       variant="secondary"
                       className="whitespace-nowrap"
                     >
-                      Get Free AI Audit
+                      Get Your Free AI Audit
                       <ArrowRightIcon className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>

@@ -42,7 +42,7 @@ export function Benefits() {
       icon: UsersIcon,
       title: "U.S.-Based Sales & Global Engineering Excellence",
       description:
-        "We combine local expertise with global talent—a U.S.-based sales and consulting team that understands the SMB market, backed by 15+ AI engineers delivering high-quality, cost-effective AI solutions.",
+        "We combine local expertise with global talent—a U.S.-based sales and consulting team that understands the SMB market, supported by a team of experienced AI engineers delivering high-quality, cost-effective AI solutions.",
     },
   ];
 

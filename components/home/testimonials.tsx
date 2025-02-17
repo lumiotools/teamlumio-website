@@ -86,8 +86,7 @@ export function Testimonials() {
               Trusted by Small to Medium Sized Businesses like Yours
             </h2>
             <p className="text-lg  text-muted-foreground">
-              See how businesses across industries are leveraging our AI
-              solutions to transform their operations and drive growth.
+              Businesses across industries trust Lumio AI to optimize sales, manufacturing, and operational workflows.
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

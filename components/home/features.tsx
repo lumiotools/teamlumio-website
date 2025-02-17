@@ -325,7 +325,7 @@ export function Features({
                   onClick={() => setIsVoiceModalOpen(true)}
                 >
                   <Mic className="mr-3 h-5 w-5" />
-                  Try Our Voice Agent
+                  Try our Lumio AI Voice Agent
                 </Button>
                 <Button
                   variant="outline"
@@ -334,7 +334,7 @@ export function Features({
                   onClick={() => setIsChatBotOpen(!isChatBotOpen)}
                 >
                   <MessageSquare className="mr-3 h-5 w-5" />
-                  Ask Our AI Any Questions
+                  Ask Lumio AI Questions
                 </Button>
               </div>
             </div>

@@ -94,11 +94,11 @@ export function Hero({
               >
 
               <Button size="lg" variant="outline" className="w-[250px]">
-                Get a Free AI Audit
+                Get Your Free AI Audit
               </Button>
               </Link>
               <Button onClick={() => setIsChatBotOpen(true)} size="lg" variant="outline" className="w-[250px]">
-                Ask Our AI Any Questions
+                Ask Lumio AI Questions
               </Button>
               <Button
                 size="lg"
@@ -106,7 +106,7 @@ export function Hero({
                 className="w-[250px] "
                 onClick={() => setIsVoiceModalOpen(true)}
               >
-                Try Our Voice Agent
+                Try our Lumio AI Voice Agent
               </Button>
             </div>
           </motion.div>
