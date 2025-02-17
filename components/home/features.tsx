@@ -89,8 +89,8 @@ export function Features({
       videoUrl: "/videos/features-ai-assistants.mp4",
     },
     {
-      title: "Video & Voice AI",
-      description: "Automate voice and video processes using agents.",
+      title: "Voice AI",
+      description: "Automate voice based processes such as phone calls with an AI voice agent.",
       videoUrl: "/videos/features-voice-and-video-ai.mp4",
     },
     {
