@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import XIcon from "@/public/XIcon";
 import { handleLinkClick } from "@/utils/handleLinkClick";
-import { Facebook, LinkedinIcon, TwitterIcon } from "lucide-react";
+import { Facebook, LinkedinIcon } from "lucide-react";
 import { Ubuntu } from "next/font/google";
 import Link from "next/link";
 import { useRouter } from "next/navigation";

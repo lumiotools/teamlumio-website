@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon, MessageSquare, Mic } from "lucide-react";
+import { ArrowRightIcon, } from "lucide-react";
 import { VoiceAgentModal } from "@/components/home/voice-agent-modal";
 import { motion } from "framer-motion";
 import Link from "next/link";
