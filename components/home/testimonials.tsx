@@ -46,10 +46,10 @@ export function Testimonials() {
     {
       quote:
         "These guys are good - really sharp and understand complex business nuances, which is important in logistics. They are 100x engineers and know how to deliver silly good solutions fast.",
-      author: "",
-      position: "",
-      company: "A shipping company based in California",
-      image: "/images/Real estate company in dubai.avif",
+      author: "Orchestro AI",
+      position: "Logistics Company based in California",
+      company: "",
+      image: "/images/logos/orchestro.png",
     },
 
     {

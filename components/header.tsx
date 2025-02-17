@@ -20,12 +20,13 @@ export function Header() {
   const router = useRouter();
 
   const navItems = [
+    { label: "Solutions", href: "/#features" },
     { label: "About", href: "/#about" },
     { label: "Methodology", href: "/methodology" },
-    { label: "Solutions", href: "/#features" },
     { label: "Testimonials", href: "/#testimonials" },
     { label: "Blogs", href: "/blogs" },
     { label: "Careers", href: "/careers" },
+    { label: "Demo Lumio Tools" , href:'/#demo'}
   ];
 
   const handleNavClick = (
@@ -75,7 +76,7 @@ export function Header() {
             href="https://calendar.app.google/Zie4xPmv4pMCyTa99"
             target="_blank"
           >
-            <Button>Meet with Us</Button>
+            <Button>Get Your Free AI Audit</Button>
           </Link>
         </div>
         <button
@@ -102,7 +103,7 @@ export function Header() {
               </Link>
             ))}
             <div className="flex flex-col gap-2 pt-4 border-t">
-              <Button>Meet with Us</Button>
+              <Button>Get Your Free AI Audit</Button>
             </div>
           </nav>
         </div>

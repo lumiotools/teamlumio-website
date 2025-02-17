@@ -101,7 +101,7 @@ export function Features({
   ];
 
   return (
-    <section className="py-20 bg-background" id="features">
+    <section className="py-20 bg-accent/50" id="features">
       <div className="container px-4">
         {/* New Capabilities Section */}
         <div className="mb-20">
@@ -270,7 +270,7 @@ export function Features({
 
             {/* Description */}
             <div className="px-6 py-3 bg-muted/50">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-primary font-medium">
                 {videoShowcase[activeVideo].description}
               </p>
             </div>
@@ -300,7 +300,7 @@ export function Features({
         </motion.div>
 
         {/* AI Action Section */}
-        <div className="mt-8">
+        <div className="pt-20" id="demo">
           <motion.div
             initial={{ opacity: 0, y: 100 }} // Starts below the screen with zero opacity
             whileInView={{
@@ -318,7 +318,7 @@ export function Features({
               <h2 className="text-3xl md:text-4xl font-bold text-center text-primary">
                 Try Our AI And Learn More About Lumio
               </h2>
-              <div className="flex flex-wrap justify-center gap-6">
+              <div className="flex flex-wrap justify-center items-center gap-6">
                 <Button
                   className="bg-primary hover:bg-primary/90 text-white px-8 py-6 rounded-2xl shadow-lg transition-transform hover:scale-105"
                   size="lg"

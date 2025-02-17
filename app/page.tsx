@@ -3,6 +3,7 @@ import { AboutUs } from "@/components/home/about-us";
 import { Benefits } from "@/components/home/benefits";
 import ChatBot from "@/components/home/chat-bot";
 import { CTA } from "@/components/home/cta";
+import DemoLumio from "@/components/home/demolumio";
 import { Features } from "@/components/home/features";
 import { Hero } from "@/components/home/hero";
 import { HowItWorks } from "@/components/home/how-it-works";
@@ -16,11 +17,11 @@ const HomePage = () => {
   return (
     <>
       <Hero setIsChatBotOpen={setIsChatBotOpen}/>
-      <AboutUs />
       <Features
         isChatBotOpen={isChatBotOpen}
         setIsChatBotOpen={setIsChatBotOpen}
       />
+      <AboutUs />
       <Testimonials />
       <Benefits />
       <TechPlatforms />

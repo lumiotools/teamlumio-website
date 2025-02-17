@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon, MessageSquare, Mic } from "lucide-react";
 import { VoiceAgentModal } from "@/components/home/voice-agent-modal";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -80,15 +80,15 @@ export function Hero({
             <Link
               href="https://calendar.app.google/Zie4xPmv4pMCyTa99"
               target="_blank"
-              className='w-full'
+              className="w-full"
             >
               <Button size="lg" className="w-[250px]">
-                Meet with Us
+                Get Your Free AI Audit
                 <ArrowRightIcon className="ml-1 h-4 w-4" />
               </Button>
             </Link>
-            <div className="flex flex-col md:flex-row gap-4">
-              <Link  
+            <div className="flex flex-col md:flex-row items-center gap-4">
+              {/* <Link  
               href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing"
               target="_blank"
               >
@@ -96,7 +96,7 @@ export function Hero({
               <Button size="lg" variant="outline" className="w-[250px]">
                 Get Your Free AI Audit
               </Button>
-              </Link>
+              </Link> */}
               <Button onClick={() => setIsChatBotOpen(true)} size="lg" variant="outline" className="w-[250px]">
                 Ask Lumio AI Questions
               </Button>
@@ -108,6 +108,24 @@ export function Hero({
               >
                 Try our Lumio AI Voice Agent
               </Button>
+              {/* <Button
+                variant="outline"
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-white w-[250px]  transition-transform hover:scale-105"
+                size="lg"
+                onClick={() => setIsChatBotOpen(true)}
+              >
+                <MessageSquare className="mr-3 h-5 w-5" />
+                Ask Lumio AI Questions
+              </Button>
+              <Button
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-white w-[250px]  transition-transform hover:scale-105"
+                size="lg"
+                variant="outline"
+                onClick={() => setIsVoiceModalOpen(true)}
+              >
+                <Mic className="mr-0 h-5 w-5" />
+                Try our Lumio AI Voice Agent
+              </Button> */}
             </div>
           </motion.div>
           <motion.div
@@ -140,7 +158,9 @@ export function Hero({
               ))}
             </div>
             <div className="text-left">
-              <p className="font-medium text-sm sm:text-base">Join the dozens of businesses</p>
+              <p className="font-medium text-sm sm:text-base">
+                Join the dozens of businesses
+              </p>
               <p className="text-muted-foreground">that trust Lumio AI</p>
             </div>
           </motion.div>

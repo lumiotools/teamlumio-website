@@ -1,7 +1,8 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import XIcon from "@/public/XIcon";
 import { handleLinkClick } from "@/utils/handleLinkClick";
-import { LinkedinIcon } from "lucide-react";
+import { Facebook, LinkedinIcon, TwitterIcon } from "lucide-react";
 import { Ubuntu } from "next/font/google";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -68,7 +69,14 @@ export function Footer() {
         icon: LinkedinIcon,
         href: "https://www.linkedin.com/company/lumio-ai/",
       },
-      // { name: "Facebook", icon: FacebookIcon },
+      { name: "Facebook",
+        icon: Facebook, 
+        href: "https://www.facebook.com/profile.php?id=61572705287113" 
+      },
+      { name: "Twitter",
+        icon: XIcon, 
+        href: "https://x.com/TeamLumioAI" 
+      },
     ],
   };
 
@@ -147,7 +155,7 @@ export function Footer() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold mb-4">Featured AI Stories</h3>
+                <h3 className="font-semibold mb-4">Featured Blogs</h3>
                 <ul className="space-y-3">
                   {links.featured.map((link, index) => (
                     <li key={link.href} id={`5n230i_${index}`}>

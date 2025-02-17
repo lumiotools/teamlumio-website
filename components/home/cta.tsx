@@ -39,7 +39,7 @@ export function CTA() {
             </p>
             <div className="flex flex-col items-center gap-4 w-full">
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
+                {/* <Link
                   href="https://calendar.app.google/Zie4xPmv4pMCyTa99"
                   target="_blank"
                 >
@@ -48,10 +48,10 @@ export function CTA() {
                     variant="secondary"
                     className="w-[200px] bg-white text-primary hover:bg-white/90"
                   >
-                    Meet With Us
+                    Get Your Free AI Audit
                     <ArrowRightIcon className="ml-1 h-4 w-4" />
                   </Button>
-                </Link>
+                </Link> */}
                 <Link
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing"
                   target="_blank"
@@ -59,7 +59,7 @@ export function CTA() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full sm:w-auto bg-transparent hover:text-white text-white border-white hover:bg-white/10"
+                    className="w-full sm:w-auto w-[200px] bg-white text-primary hover:bg-white/90"
                   >
                     Get Your Free AI Audit
                   </Button>
