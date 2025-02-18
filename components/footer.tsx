@@ -202,7 +202,7 @@ export function Footer() {
               </div>
             </div>
           </div>
-            <div className="flex flex-wrap justify-evenly items-center  gap-4">
+            <div className="flex flex-wrap justify-evenly items-center gap-4">
                 {links.certificate.map((certificate, index) => (
                   <div key={index}>
                     <div className="flex flex-row  items-center">
@@ -228,7 +228,7 @@ export function Footer() {
                 ))}
               </div>
         </div>
-        <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
+        <div className="border-t mt-4 pt-8 text-center text-muted-foreground">
           <p>© 2025 Lumio AI. All rights reserved.</p>
         </div>
       </div>
