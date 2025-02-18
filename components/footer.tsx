@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import XIcon from "@/public/XIcon";
+import { cn } from "@/lib/utils";
 import { handleLinkClick } from "@/utils/handleLinkClick";
 import { Facebook, LinkedinIcon } from "lucide-react";
 import { Ubuntu } from "next/font/google";
@@ -69,13 +70,40 @@ export function Footer() {
         icon: LinkedinIcon,
         href: "https://www.linkedin.com/company/lumio-ai/",
       },
-      { name: "Facebook",
-        icon: Facebook, 
-        href: "https://www.facebook.com/profile.php?id=61572705287113" 
+      {
+        name: "Facebook",
+        icon: Facebook,
+        href: "https://www.facebook.com/profile.php?id=61572705287113",
       },
-      { name: "Twitter",
-        icon: XIcon, 
-        href: "https://x.com/TeamLumioAI" 
+      { name: "Twitter", icon: XIcon, href: "https://x.com/TeamLumioAI" },
+    ],
+
+    certificate: [
+      {
+        images: "/images/logos/gdpr-logo.png",
+        text: "GDPR compliant",
+        compliant: "compliant",
+        className:"py-1 mr-1"
+      },
+      {
+        images: "/images/logos/hipca-logo.png",
+        // className: "max-w-[20] max-h-[20]"
+        text: "HIPAA compliant",
+        compliant: "compliant",
+        className:"py-1 mr-1"
+      },
+      {
+        images: "/images/logos/iso-logo.png",
+        text: "ISO 27001",
+        compliant: "",
+        label: "(Coming Soon)",
+        className:"py-1 mr-2"
+      },
+      {
+        images: "/images/logos/aipca-logo.png",
+        label: "(Coming Soon)",
+        text: "SOC 2",
+        className: " max-h-[55px]"
       },
     ],
   };
@@ -114,6 +142,7 @@ export function Footer() {
                   </Link>
                 ))}
               </div>
+             
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 w-full md:w-2/3">
@@ -173,8 +202,33 @@ export function Footer() {
               </div>
             </div>
           </div>
+            <div className="flex flex-wrap justify-evenly items-center  gap-4">
+                {links.certificate.map((certificate, index) => (
+                  <div key={index}>
+                    <div className="flex flex-row  items-center">
+                      <img
+                        src={certificate.images}
+                        alt={certificate.label}
+                        className={cn(
+                          "w-auto max-h-[53px] object-contain",
+                          certificate.className
+                        )}
+                      />
+                      <div>
+                        <p className="text-md leading-tight">{certificate.text}</p>
+                        {certificate.label && (
+                          <p className="text-[12px] leading-tight text-muted-foreground">{certificate.label}</p>
+                        )}
+                      </div>
+                    </div>
+                    {/* <p className="text-[10px] text-gray-500 mt-1">
+                      {certificate.label}
+                    </p> */}
+                  </div>
+                ))}
+              </div>
         </div>
-        <div className="border-t mt-12 pt-8 text-center text-muted-foreground">
+        <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
           <p>© 2025 Lumio AI. All rights reserved.</p>
         </div>
       </div>

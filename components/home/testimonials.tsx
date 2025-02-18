@@ -17,6 +17,7 @@ export function Testimonials() {
       position: "CEO",
       company: "Mosa",
       image: "/images/Mosa.avif",
+      tags: "Consumer Retail",
     },
     {
       quote:
@@ -26,6 +27,7 @@ export function Testimonials() {
       company: "Hammerberg & Associates, Inc.",
       image: "/images/Jeff Hammerberg.avif",
       video: "/videos/testimonial-jeff.mp4",
+      tags: "Real Estate Brokerage",
     },
     {
       quote:
@@ -34,6 +36,7 @@ export function Testimonials() {
       position: "",
       company: "A real estate company in Dubai",
       image: "/images/Real estate company in dubai.avif",
+      tags: "Real Estate",
     },
     {
       quote:
@@ -42,6 +45,7 @@ export function Testimonials() {
       position: "Head of Sales",
       company: "Paloma Realty",
       image: "/images/Timesh Paloma.jpg",
+      tags: "Real Estate Development",
     },
     {
       quote:
@@ -50,6 +54,7 @@ export function Testimonials() {
       position: "",
       company: "Logistics Company based in California",
       image: "/images/logos/orchestro.png",
+      tags: "Logistics & Supply Chain",
     },
 
     {
@@ -59,6 +64,7 @@ export function Testimonials() {
       position: "",
       company: "Financial Services Company in South Korea",
       image: "/images/Real estate company in dubai.avif",
+      tags: "Financial Services",
     },
   ];
 
@@ -108,9 +114,10 @@ export function Testimonials() {
                 <Card className="bg-background flex flex-col h-full">
                   <CardContent className="pt-6 flex flex-col h-full">
                     <div className="flex flex-col flex-grow">
-                      <p className="text-lg mb-6">
+                      <p className="text-lg mb-3 text-justify">
                         &quot;{testimonial.quote}&quot;
                       </p>
+                      <p className="p-1 px-3  border-[1.5px] text-primary bg-primary/10 border-primary rounded-full text-sm font-medium mb-3 w-fit">{testimonial.tags}</p>
                     </div>
                     {testimonial.video && (
                       <div

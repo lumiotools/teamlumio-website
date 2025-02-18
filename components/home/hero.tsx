@@ -180,7 +180,9 @@ export function Hero({
               ease: "easeOut",
             }}
             viewport={{ once: true }}
-            className="flex items-center gap-4 mt-[10px] text-sm"
+            className="flex items-center gap-4
+            //  mt-[10px] 
+             text-sm"
           >
             <div className="flex -space-x-2">
               {[
