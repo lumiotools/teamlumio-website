@@ -20,7 +20,7 @@ export function Header() {
   const router = useRouter();
 
   const navItems = [
-    { label: "About US", href: "/#about" },
+    { label: "About Us", href: "/#about" },
     { label: "Methodology", href: "/methodology" },
     { label: "Solutions", href: "/#features" },
     { label: "Testimonials", href: "/#testimonials" },

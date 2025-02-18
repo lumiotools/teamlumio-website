@@ -114,10 +114,10 @@ export function Testimonials() {
                 <Card className="bg-background flex flex-col h-full">
                   <CardContent className="pt-6 flex flex-col h-full">
                     <div className="flex flex-col flex-grow">
-                      <p className="text-lg mb-3 text-justify">
+                      <p className="text-md sm:text-lg mb-3 text-justify">
                         &quot;{testimonial.quote}&quot;
                       </p>
-                      <p className="p-1 px-3  border-[1.5px] text-primary bg-primary/10 border-primary rounded-full text-sm font-medium mb-3 w-fit">{testimonial.tags}</p>
+                      <p className="p-1 px-3  border-[1.5px] text-primary bg-primary/10 border-primary rounded-full text-xs font-medium mb-3 w-fit">{testimonial.tags}</p>
                     </div>
                     {testimonial.video && (
                       <div

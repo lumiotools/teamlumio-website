@@ -6,6 +6,7 @@ import { ArrowRightIcon, MessageSquare, Mic } from "lucide-react";
 import { VoiceAgentModal } from "@/components/home/voice-agent-modal";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import HeroBackground from "./herobackground";
 
 export function Hero({
   setIsChatBotOpen,
@@ -16,6 +17,7 @@ export function Hero({
 
   return (
     <div className="relative overflow-hidden min-h-[calc(100vh-4rem)]">
+      <HeroBackground />
       <div className="container px-4 h-full flex items-center min-h-[calc(100vh-4rem)]">
         <div className="flex flex-col items-center text-center gap-8 sm:gap-12 max-w-4xl mx-auto">
           {/* <div
@@ -31,6 +33,8 @@ export function Hero({
               Transform Inbound with AI
             </span>
           </div> */}
+          <div className='flex flex-col gap-5 items-center '>
+
           <motion.h1
             initial={{ opacity: 0, y: 100 }}
             whileInView={{
@@ -64,6 +68,8 @@ export function Hero({
             transform how work happens and we provide a guaranteed ROI on all
             deployments.
           </motion.p>
+          </div>
+
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{
@@ -75,7 +81,7 @@ export function Hero({
               ease: "easeOut",
             }}
             viewport={{ once: true }}
-            className="flex flex-col items-center gap-4 w-full"
+            className="flex flex-col items-center gap-5 w-full"
           >
             <Link
               href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing "
@@ -126,49 +132,49 @@ export function Hero({
                 <Mic className="mr-0 h-5 w-5" />
                 Try our Lumio AI Voice Agent
               </Button> *
-            </div> */}
-          </motion.div>
-          <div className="" id="demo">
-            <motion.div
-              initial={{ opacity: 0, y: 100 }} // Starts below the screen with zero opacity
-              whileInView={{
-                opacity: 1, // Fade in
-                y: 0, // Slide to its natural position
-              }}
-              transition={{
-                duration: 1, // Adjust the duration for the slide effect
-                ease: "easeOut",
-              }}
-              viewport={{ once: true }}
-              className="relative bg-primary/10 rounded-3xl p-8"
-            >
-              <div className="flex flex-col items-center justify-center gap-4  max-w-4xl mx-auto">
-                <h2 className="text-lg md:text-xl font-medium text-center text-primary">
-                  Try Our AI And Learn More About Lumio
-                </h2>
-                <div className="flex flex-wrap justify-center items-center gap-6">
-                  <Button
-                    className="w-[250px]"
-                    size="lg"
-                    variant="outline"
-                    onClick={() => setIsVoiceModalOpen(true)}
-                  >
-                    <Mic className="mr-3 h-5 w-5" />
-                    Try our Lumio AI Voice Agent
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="w-[250px]"
-                    size="lg"
-                    onClick={() => setIsChatBotOpen(true)}
-                  >
-                    <MessageSquare className="mr-3 h-5 w-5" />
-                    Ask Lumio AI Questions
-                  </Button>
-                </div>
+              </div> */}
+              <div className="" id="demo">
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }} // Starts below the screen with zero opacity
+                  whileInView={{
+                    opacity: 1, // Fade in
+                    y: 0, // Slide to its natural position
+                  }}
+                  transition={{
+                    duration: 1, // Adjust the duration for the slide effect
+                    ease: "easeOut",
+                  }}
+                  viewport={{ once: true }}
+                  className="relative bg-primary/10 rounded-3xl p-8"
+                >
+                  <div className="flex flex-col items-center justify-center gap-4  max-w-4xl mx-auto">
+                    <h2 className="text-lg md:text-xl font-medium text-center text-primary">
+                      Try Our AI And Learn More About Lumio
+                    </h2>
+                    <div className="flex flex-wrap justify-center items-center gap-6">
+                      <Button
+                        className="w-[250px]"
+                        size="lg"
+                        variant="outline"
+                        onClick={() => setIsVoiceModalOpen(true)}
+                      >
+                        <Mic className="mr-3 h-5 w-5" />
+                        Try our Lumio AI Voice Agent
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="w-[250px]"
+                        size="lg"
+                        onClick={() => setIsChatBotOpen(true)}
+                      >
+                        <MessageSquare className="mr-3 h-5 w-5" />
+                        Ask Lumio AI Questions
+                      </Button>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
-            </motion.div>
-          </div>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{
@@ -180,9 +186,7 @@ export function Hero({
               ease: "easeOut",
             }}
             viewport={{ once: true }}
-            className="flex items-center gap-4
-            //  mt-[10px] 
-             text-sm"
+            className="flex items-center gap-4 text-sm"
           >
             <div className="flex -space-x-2">
               {[
