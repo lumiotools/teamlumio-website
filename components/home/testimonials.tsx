@@ -25,16 +25,15 @@ export function Testimonials() {
     }
   }, [activeTestimonialVideo]);
 
-  useEffect(() => {
-    if (activeVideo === null) {
-      router.replace("/#testimonials");
-    }
-  }, [activeVideo]);
-
   return (
     <Dialog
       open={!!activeVideo}
-      onOpenChange={(isOpen) => !isOpen && setActiveVideo(null)}
+      onOpenChange={(isOpen) => {
+        if (!isOpen) {
+          router.replace("/#testimonials");
+          setActiveVideo(null);
+        }
+      }}
     >
       <section className="py-20 bg-background" id="testimonials">
         <div className="container px-4">
