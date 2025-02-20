@@ -9,18 +9,20 @@ import { HowItWorks } from "@/components/home/how-it-works";
 import { Newsletter } from "@/components/home/newsletter";
 import { TechPlatforms } from "@/components/home/tech-platforms";
 import { Testimonials } from "@/components/home/testimonials";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 
 const HomePage = () => {
   const [isChatBotOpen, setIsChatBotOpen] = useState(false);
   return (
     <>
-      <Hero setIsChatBotOpen={setIsChatBotOpen}/>
+      <Hero setIsChatBotOpen={setIsChatBotOpen} />
       <Features
-        // isChatBotOpen={isChatBotOpen}
-        // setIsChatBotOpen={setIsChatBotOpen}
+      // isChatBotOpen={isChatBotOpen}
+      // setIsChatBotOpen={setIsChatBotOpen}
       />
-      <Testimonials />
+      <Suspense>
+        <Testimonials />
+      </Suspense>
       <AboutUs />
       <Benefits />
       <TechPlatforms />
