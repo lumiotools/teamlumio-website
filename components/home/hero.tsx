@@ -199,7 +199,7 @@ export function Hero({
                   key={index}
                   src={image}
                   alt="User"
-                  className="h-8 w-8 rounded-full border-2 border-background object-contain"
+                  className="h-8 w-8 rounded-full border-2 border-background bg-white object-contain"
                   id={`6vjmxw_${index}`}
                 />
               ))}

@@ -48,7 +48,7 @@ export const TESTIMONIALS = [
 
   {
     quote:
-      "They just get it done! Simple, easy to work with, and fast. They broke down complex AI terms into simple language and made us feel completely involved. They understood our problems instantly and quickly iterated on feedback we gave them. We've already begun our second project with Lumio!",
+    "What sets Lumio apart is their dedication to going the extra mile—anticipating challenges, refining solutions, and ensuring every project exceeds expectations. They deliver on time without compromising quality, making them not just service providers but trusted partners. Working with then has been an outstanding experience.",
     author: "",
     position: "",
     company: "Financial Services Company in South Korea",
