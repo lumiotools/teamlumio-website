@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { useRouter, useSearchParams } from "next/navigation";
 import { TESTIMONIALS } from "@/constants/testimonials";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export function Testimonials() {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
@@ -108,7 +109,7 @@ export function Testimonials() {
                       <img
                         src={testimonial.image || "/placeholder.svg"}
                         alt={testimonial.author || testimonial.company}
-                        className="h-12 w-12 rounded-full object-contain"
+                        className={cn('h-12 w-12 rounded-full object-contain', testimonial.className)}
                       />
                       <div>
                         {testimonial.author && (

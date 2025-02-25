@@ -7,6 +7,7 @@ export const TESTIMONIALS = [
     company: "Mosa",
     image: "/images/Mosa.avif",
     tags: "Consumer Retail",
+
   },
   {
     quote:
@@ -39,7 +40,7 @@ export const TESTIMONIALS = [
   {
     quote:
       "These guys are good - really sharp and understand complex business nuances, which is important in logistics. They are 100x engineers and know how to deliver silly good solutions fast.",
-    author: "Orchestro AI",
+    author: "Orchestro",
     position: "",
     company: "Logistics Company based in California",
     image: "/images/logos/orchestro.png",
@@ -49,10 +50,11 @@ export const TESTIMONIALS = [
   {
     quote:
     "What sets Lumio apart is their dedication to going the extra mile—anticipating challenges, refining solutions, and ensuring every project exceeds expectations. They deliver on time without compromising quality, making them not just service providers but trusted partners. Working with then has been an outstanding experience.",
-    author: "",
+    author: "Promenade",
     position: "",
     company: "Financial Services Company in South Korea",
-    image: "/images/Real estate company in dubai.avif",
+    image: "/images/promenda.svg",
     tags: "Financial Services",
+    className: "invert"
   },
 ];
