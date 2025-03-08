@@ -1,78 +1,78 @@
 "use client";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  DatabaseIcon,
-  FilterIcon,
-  PlayIcon,
-  PresentationIcon,
-} from "lucide-react";
+// import { Card, CardContent } from "@/components/ui/card";
+// import {
+//   DatabaseIcon,
+//   FilterIcon,
+//   PlayIcon,
+//   PresentationIcon,
+// } from "lucide-react";
 import { motion } from "framer-motion";
 
 export const MethodologyContent = () => {
-  const frameworkSteps = [
-    {
-      id: "data",
-      letter: "D",
-      title: "Data Aggregation",
-      icon: DatabaseIcon,
-      description: [
-        "For small businesses, managing data from multiple tools—such as customer databases, invoicing systems, and sales reports—can be overwhelming. Our Custom AI Workers seamlessly connect with any digital data source, including CRM tools, e-commerce platforms, cloud apps, and even spreadsheets, to gather critical business data automatically.",
-        "We don't just integrate data; we ensure that the AI Worker understands the unique context of your business, organizing customer interactions, sales trends, and operational data in a way that makes AI-driven automation relevant and useful.",
-      ],
-    },
-    {
-      id: "refinement",
-      letter: "R",
-      title: "Refinement",
-      icon: FilterIcon,
-      description: [
-        "Raw data from different sources is often messy or inconsistent. The Refinement phase ensures that the AI Worker processes data correctly, eliminating duplicates, errors, and irrelevant information. By applying smart filters, automation rules, and industry-specific AI knowledge, Lumio AI helps small businesses:",
-      ],
+  // const frameworkSteps = [
+  //   {
+  //     id: "data",
+  //     letter: "D",
+  //     title: "Data Aggregation",
+  //     icon: DatabaseIcon,
+  //     description: [
+  //       "For small businesses, managing data from multiple tools—such as customer databases, invoicing systems, and sales reports—can be overwhelming. Our Custom AI Workers seamlessly connect with any digital data source, including CRM tools, e-commerce platforms, cloud apps, and even spreadsheets, to gather critical business data automatically.",
+  //       "We don't just integrate data; we ensure that the AI Worker understands the unique context of your business, organizing customer interactions, sales trends, and operational data in a way that makes AI-driven automation relevant and useful.",
+  //     ],
+  //   },
+  //   {
+  //     id: "refinement",
+  //     letter: "R",
+  //     title: "Refinement",
+  //     icon: FilterIcon,
+  //     description: [
+  //       "Raw data from different sources is often messy or inconsistent. The Refinement phase ensures that the AI Worker processes data correctly, eliminating duplicates, errors, and irrelevant information. By applying smart filters, automation rules, and industry-specific AI knowledge, Lumio AI helps small businesses:",
+  //     ],
 
-      bullets: [
-        "Unify data across multiple platforms (e.g., QuickBooks, Shopify, Mailchimp, Google Workspace)",
-        "Detect patterns in customer behavior and sales trends",
-        "Ensure clean, structured data for more accurate AI-driven decisions",
-      ],
-    },
-    {
-      id: "operation",
-      letter: "O",
-      title: "Operation",
-      icon: PlayIcon,
-      description: [
-        "Once the data is refined, the AI Worker performs its processing before generating any output. This includes using deterministic rule-based algorithms, custom machine learning models, and Large Language Models (LLMs) to extract insights, automate decision-making, and enhance workflows.",
-        "We leverage LLMs (Large Language Models), predictive analytics, and automated workflows to help small businesses:",
-      ],
+  //     bullets: [
+  //       "Unify data across multiple platforms (e.g., QuickBooks, Shopify, Mailchimp, Google Workspace)",
+  //       "Detect patterns in customer behavior and sales trends",
+  //       "Ensure clean, structured data for more accurate AI-driven decisions",
+  //     ],
+  //   },
+  //   {
+  //     id: "operation",
+  //     letter: "O",
+  //     title: "Operation",
+  //     icon: PlayIcon,
+  //     description: [
+  //       "Once the data is refined, the AI Worker performs its processing before generating any output. This includes using deterministic rule-based algorithms, custom machine learning models, and Large Language Models (LLMs) to extract insights, automate decision-making, and enhance workflows.",
+  //       "We leverage LLMs (Large Language Models), predictive analytics, and automated workflows to help small businesses:",
+  //     ],
 
-      bullets: [
-        "Automate customer service responses with AI-powered chatbots",
-        "Predict inventory needs based on sales history",
-        "Streamline task management by automating repetitive admin work",
-      ],
-    },
-    {
-      id: "presentation",
-      letter: "P",
-      title: "Presentation & Action",
-      icon: PresentationIcon,
-      description: [
-        "Small business owners don't have time to analyze complex AI reports. That's why the Presentation & Action phase focuses on delivering clear, simple, and actionable insights in a user and workflow-friendly manner, on any channel of their choice.",
-        "Lumio AI ensures that small businesses can:",
-      ],
+  //     bullets: [
+  //       "Automate customer service responses with AI-powered chatbots",
+  //       "Predict inventory needs based on sales history",
+  //       "Streamline task management by automating repetitive admin work",
+  //     ],
+  //   },
+  //   {
+  //     id: "presentation",
+  //     letter: "P",
+  //     title: "Presentation & Action",
+  //     icon: PresentationIcon,
+  //     description: [
+  //       "Small business owners don't have time to analyze complex AI reports. That's why the Presentation & Action phase focuses on delivering clear, simple, and actionable insights in a user and workflow-friendly manner, on any channel of their choice.",
+  //       "Lumio AI ensures that small businesses can:",
+  //     ],
 
-      bullets: [
-        "Access AI-powered insights on their preferred platforms—whether through email, an ERP system, an online dashboard, a chatbot, or mobile notifications",
-        "Enable autonomous actions—such as sending follow-up emails to customers, updating CRM records, making phone calls, and submitting forms—without manual effort",
-        "Ensure real-time responsiveness with AI-driven alerts, automated workflow triggers, and intelligent notifications to keep business operations running smoothly",
-      ],
-    },
-  ];
+  //     bullets: [
+  //       "Access AI-powered insights on their preferred platforms—whether through email, an ERP system, an online dashboard, a chatbot, or mobile notifications",
+  //       "Enable autonomous actions—such as sending follow-up emails to customers, updating CRM records, making phone calls, and submitting forms—without manual effort",
+  //       "Ensure real-time responsiveness with AI-driven alerts, automated workflow triggers, and intelligent notifications to keep business operations running smoothly",
+  //     ],
+  //   },
+  // ];
 
   return (
     <div className="container mx-auto px-4 py-16 space-y-20">
       {/* Introduction */}
-      <motion.section
+      {/* <motion.section
         initial={{ opacity: 0, y: 100 }}
         whileInView={{
           opacity: 1,
@@ -100,10 +100,10 @@ export const MethodologyContent = () => {
           Aggregation, Refinement, Operation, and Presentation & Action, a
           step-by-step methodology tailored for small business needs.
         </p>
-      </motion.section>
+      </motion.section> */}
 
       {/* Framework Overview */}
-      <motion.section
+      {/* <motion.section
         initial={{ opacity: 0, y: 100 }}
         whileInView={{
           opacity: 1,
@@ -126,10 +126,10 @@ export const MethodologyContent = () => {
           automation and smarter decision-making. Each phase ensures that AI is
           easy to implement, adaptable, and provides immediate benefits.
         </p>
-      </motion.section>
+      </motion.section> */}
 
       {/* Framework Steps */}
-      <section className="max-w-4xl mx-auto grid grid-cols-1 gap-8">
+      {/* <section className="max-w-4xl mx-auto grid grid-cols-1 gap-8">
         {frameworkSteps.map((step, index) => (
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -189,7 +189,7 @@ export const MethodologyContent = () => {
             </Card>
           </motion.div>
         ))}
-      </section>
+      </section> */}
 
       {/* Conclusion */}
       <motion.section
@@ -205,17 +205,16 @@ export const MethodologyContent = () => {
         viewport={{ once: true }}
         className="max-w-4xl mx-auto space-y-6"
       >
-        <h2 className="text-3xl font-bold">
-          The Role of DROP<span className="mr-2 font-normal">™</span>in Small
-          Business AI Adoption
+        <h2 className="text-3xl font-bold text-center">
+          The Role of DROP<span className="mr-2 font-normal">™</span>in SMB&apos;s AI Adoption
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed text-justify">
           With the DROP<span className="mr-2 font-normal">™</span>Framework,
-          small businesses can integrate AI into their workflows without the
+          SMBs can integrate AI into their workflows without the
           need for extensive technical expertise or expensive enterprise
           solutions. Whether it&apos;s automating tasks, improving customer
           engagement, or making data-driven decisions, AI is now accessible and
-          practical for small business owners.
+          practical for SMB owners.
         </p>
       </motion.section>
     </div>

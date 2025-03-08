@@ -52,7 +52,7 @@ export function Testimonials() {
             className="text-center max-w-4xl mx-auto mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight mb-4">
-              Trusted by Small to Medium Sized Businesses like Yours
+              Trusted by SMBs like Yours
             </h2>
             <p className="text-lg  text-muted-foreground">
               Businesses across industries trust Lumio AI to optimize sales,
@@ -81,9 +81,9 @@ export function Testimonials() {
                       <p className="text-md sm:text-lg mb-3 text-justify">
                         &quot;{testimonial.quote}&quot;
                       </p>
-                      <p className="p-1 px-3  border-[1.5px] text-primary bg-primary/10 border-primary rounded-full text-xs font-medium mb-3 w-fit">
+                      {/* <p className="p-1 px-3  border-[1.5px] text-primary bg-primary/10 border-primary rounded-full text-xs font-medium mb-3 w-fit">
                         {testimonial.tags}
-                      </p>
+                      </p> */}
                     </div>
                     {testimonial.video && (
                       <Link

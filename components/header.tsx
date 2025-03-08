@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { MenuIcon, XIcon } from "lucide-react";
+// import { MenuIcon, XIcon } from "lucide-react";
 import { Ubuntu } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -20,13 +20,13 @@ export function Header() {
   const router = useRouter();
 
   const navItems = [
-    { label: "About Us", href: "/#about" },
+    { label: "About Us", href: "/about-us" },
     { label: "Methodology", href: "/methodology" },
-    { label: "Solutions", href: "/#features" },
-    { label: "Testimonials", href: "/#testimonials" },
+    // { label: "Solutions", href: "/#features" },
+    { label: "Testimonials", href: "/testimonials" },
     { label: "Blogs", href: "/blogs" },
     { label: "Careers", href: "/careers" },
-    { label: "Demo Lumio Tools" , href:'/#demo'}
+    // { label: "Demo Lumio Tools" , href:'/#demo'}
   ];
 
   const handleNavClick = (
@@ -39,28 +39,28 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-8">
+      <div className="w-full px-8 flex h-16 items-center justify-between">
+        {/* <div className="flex items-center  justify-center gap-8"> */}
           <Link
             href="/"
-            className="flex items-center gap-2 cursor-pointer"
+            className="flex justify-center items-center gap-2 cursor-pointer"
             onClick={(e) => handleNavClick("/", e)}
           >
-            <div className="h-8 w-8">
-              <img src="/images/logos/Lumio AI.png" />
+            <div className="size-12">
+              <img src="/images/logos/lumio-logo-v2.png" />
             </div>
             <span
-              className={`text-xl font-bold text-primary ${ubuntu.className}`}
+              className={`text-2xl font-medium text-primary ${ubuntu.className}`}
             >
               Lumio AI
             </span>
           </Link>
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex flex-1 ml-auto items-center justify-center gap-16">
             {navItems.map((item, index) => (
               <Link
                 key={index}
                 href={item.href}
-                className={`text-sm font-medium hover:text-primary ${
+                className={`text-lg font-normal hover:text-primary ${
                   currentPath === item.href ? "text-primary" : ""
                 }`}
                 onClick={(e) => handleNavClick(item.href, e)}
@@ -70,21 +70,22 @@ export function Header() {
               </Link>
             ))}
           </nav>
-        </div>
-        <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing"
             target="_blank"
           >
-            <Button>Get Your Free AI Consultation</Button>
+            <Button className="px-6">Book Your Free AI Consultation</Button>
           </Link>
+        {/* </div> */}
         </div>
-        <button
+       
+        {/* <button
           className="lg:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <XIcon /> : <MenuIcon />}
-        </button>
+        </button> */}
       </div>
       {isMenuOpen && (
         <div className="lg:hidden border-t">

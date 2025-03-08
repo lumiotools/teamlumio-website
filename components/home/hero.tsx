@@ -2,14 +2,14 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon, MessageSquare, Mic } from "lucide-react";
+// import { ArrowRightIcon, MessageSquare, Mic } from "lucide-react";
 import { VoiceAgentModal } from "@/components/home/voice-agent-modal";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import HeroBackground from "./herobackground";
 
 export function Hero({
-  setIsChatBotOpen,
+  // setIsChatBotOpen,
 }: {
   setIsChatBotOpen: (isOpen: boolean) => void;
 }) {
@@ -46,10 +46,9 @@ export function Hero({
               ease: "easeOut",
             }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight "
+            className="text-3xl sm:text-5xl md:text-7xl font-medium tracking-tight "
           >
-            <span className="text-primary ">Custom AI Workers</span> for Small
-            Businesses
+            <span className="text-primary text-[4.6rem] ">Empowering Humans</span> <br/>To Do More
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 100 }}
@@ -62,11 +61,9 @@ export function Hero({
               ease: "easeOut",
             }}
             viewport={{ once: true }}
-            className="text-lg sm:text-xl text-muted-foreground max-w-[42rem]"
+            className="text-lg sm:text-xl text-muted-foreground max-w-[52rem]"
           >
-            Experience what AI can do for your business. Our Custom Agents
-            transform how work happens and we provide a guaranteed ROI on all
-            deployments.
+            Lumio makes AI accessible, practical, and built for growth—delivering high-quality, high-impact solutions with competitive turnaround times and measurable ROI.
           </motion.p>
           </div>
 
@@ -88,9 +85,9 @@ export function Hero({
               target="_blank"
               className="w-full"
             >
-              <Button size="lg" className="w-[250px]">
-                Get Your Free AI Consultation
-                <ArrowRightIcon className="ml-1 h-4 w-4" />
+              <Button size="lg" className="w-[320px] h-14 text-lg">
+                Book Your Free AI Consultation
+                {/* <ArrowRightIcon className="ml-1 h-4 w-4" /> */}
               </Button>
             </Link>
             {/* <div className="flex flex-col md:flex-row items-center gap-4">
@@ -133,7 +130,7 @@ export function Hero({
                 Try our Lumio AI Voice Agent
               </Button> *
               </div> */}
-              <div className="" id="demo">
+              {/* <div className="" id="demo">
                 <motion.div
                   initial={{ opacity: 0, y: 100 }} // Starts below the screen with zero opacity
                   whileInView={{
@@ -173,9 +170,9 @@ export function Hero({
                     </div>
                   </div>
                 </motion.div>
-              </div>
+              </div> */}
           </motion.div>
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{
               opacity: 1,
@@ -210,7 +207,7 @@ export function Hero({
               </p>
               <p className="text-muted-foreground">that trust Lumio AI</p>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
       {/* <div

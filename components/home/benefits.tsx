@@ -29,9 +29,6 @@ export function Benefits() {
       description:
         "From AI strategy & consulting to custom development & seamless integration, we handle it all. Our solutions include AI automation, predictive analytics, chatbots, and process optimization—designed for maximum impact with minimal disruption.",
     },
-  ];
-
-  const bottomBenefits = [
     {
       icon: DollarSignIcon,
       title: "Project-Based Pricing for Maximum ROI",
@@ -45,6 +42,21 @@ export function Benefits() {
         "We combine local expertise with global talent—a U.S.-based sales and consulting team that understands the SMB market, supported by a team of experienced AI engineers delivering high-quality, cost-effective AI solutions.",
     },
   ];
+
+  // const bottomBenefits = [
+  //   {
+  //     icon: DollarSignIcon,
+  //     title: "Project-Based Pricing for Maximum ROI",
+  //     description:
+  //       "No long-term contracts. No hidden fees. We offer fixed-price AI solutions so you pay for results, not empty promises—ensuring you get the best return on your investment.",
+  //   },
+  //   {
+  //     icon: UsersIcon,
+  //     title: "U.S.-Based Sales & Global Engineering Excellence",
+  //     description:
+  //       "We combine local expertise with global talent—a U.S.-based sales and consulting team that understands the SMB market, supported by a team of experienced AI engineers delivering high-quality, cost-effective AI solutions.",
+  //   },
+  // ];
 
   return (
     <section className="py-20">
@@ -62,7 +74,7 @@ export function Benefits() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <h2 className="text-3xl font-bold tracking-tight mb-4">
+          <h2 className="text-4xl font-bold tracking-tight mb-4">
             Why Choose Lumio AI?
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -70,35 +82,40 @@ export function Benefits() {
             solutions to help you succeed.
           </p>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
           {benefits.map((benefit, index) => (
             <motion.div
-              initial={{ opacity: 0, scale: 0 }}
+              initial={{
+                opacity: 0,
+                y: 100,
+                // scale: 0
+              }}
               whileInView={{
                 opacity: 1,
-                scale: 1,
+                y: 0,
+                // scale: 1,
               }}
               transition={{
-                duration: 0.5,
-                delay: 0.2 * index,
+                duration: 1.2,
+                delay: 1+(0.5 * index),
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
               key={index}
               id={`q3qpvb_${index}`}
             >
-              <Card className="border-none shadow-none h-full bg-accent/50">
-                <CardContent className="pt-6" id={`ijh8dq_${index}`}>
+              <Card className="shadow-none h-full bg-accent/50 border-4 border-transparent hover:border-primary hover:scale-[120%] transition-all ease-in-out duration-500">
+                <CardContent className="pt-6 text-center" id={`ijh8dq_${index}`}>
                   <div
-                    className="flex flex-col items-start gap-4"
+                    className="flex flex-col items-center gap-4"
                     id={`2457ce_${index}`}
                   >
                     <div
-                      className="p-3 rounded-lg bg-primary/10"
+                      className="p-3 rounded-lg"
                       id={`vjewjv_${index}`}
                     >
                       <benefit.icon
-                        className="h-6 w-6 text-primary"
+                        className="size-10 text-primary"
                         id={`427n42_${index}`}
                       />
                     </div>
@@ -108,26 +125,31 @@ export function Benefits() {
                     >
                       {benefit.title}
                     </h3>
-                    <p className="text-muted-foreground" id={`myizfs_${index}`}>
+                    {/* <p className="text-muted-foreground" id={`myizfs_${index}`}>
                       {benefit.description}
-                    </p>
+                    </p> */}
                   </div>
                 </CardContent>
               </Card>
             </motion.div>
           ))}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {bottomBenefits.map((benefit, index) => (
             <motion.div
-              initial={{ opacity: 0, scale: 0 }}
+              initial={{
+                opacity: 0,
+                //  scale: 0
+                y: 100,
+              }}
               whileInView={{
                 opacity: 1,
-                scale: 1,
+                // scale: 1,
+                y: 0,
               }}
               transition={{
-                duration: 0.5,
-                delay: 0.2 * index,
+                duration: 1.2,
+                delay: 1.5+(0.5  * index),
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
@@ -135,13 +157,13 @@ export function Benefits() {
               id={`q3qpvb_${index + 3}`}
             >
               <Card className="border-none shadow-none h-full bg-accent/50">
-                <CardContent className="pt-6" id={`ijh8dq_${index + 3}`}>
+                <CardContent className="pt-6 text-center" id={`ijh8dq_${index + 3}`}>
                   <div
-                    className="flex flex-col items-start gap-4"
+                    className="flex flex-col items-center gap-4"
                     id={`2457ce_${index + 3}`}
                   >
                     <div
-                      className="p-3 rounded-lg bg-primary/10"
+                      className="p-3 rounded-lg"
                       id={`vjewjv_${index + 3}`}
                     >
                       <benefit.icon
@@ -166,7 +188,7 @@ export function Benefits() {
               </Card>
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

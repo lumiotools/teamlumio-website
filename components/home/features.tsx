@@ -3,18 +3,18 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import {
+// import { Badge } from "@/components/ui/badge";
+// import {
   // PlayIcon,
-  HeadphonesIcon,
-  LineChartIcon,
-  UsersIcon,
-  CpuIcon,
-  ChevronRightIcon,
-  ChevronDownIcon,
+  // HeadphonesIcon,
+  // LineChartIcon,
+  // UsersIcon,
+  // CpuIcon,
+  // ChevronRightIcon,
+  // ChevronDownIcon,
   // Mic,
   // MessageSquare,
-} from "lucide-react";
+// } from "lucide-react";
 import { VoiceAgentModal } from "./voice-agent-modal";
 import { motion } from "framer-motion";
 
@@ -28,49 +28,49 @@ export function Features(
 // }
 ) {
   const [activeVideo, setActiveVideo] = useState(0);
-  const [expandedCapability, setExpandedCapability] = useState<number | null>(
-    null
-  );
+  // const [expandedCapability, setExpandedCapability] = useState<number | null>(
+  //   null
+  // );
   const [isVoiceModalOpen, setIsVoiceModalOpen] = useState(false);
 
-  const capabilities = [
-    {
-      icon: HeadphonesIcon,
-      title: "Customer Interaction",
-      items: [
-        "Handle support calls 24/7",
-        "Process customer inquiries",
-        "Manage email communications",
-      ],
-    },
-    {
-      icon: LineChartIcon,
-      title: "Business Operations",
-      items: [
-        "Automate workflow processes",
-        "Generate reports automatically",
-        "Monitor KPIs in real-time",
-      ],
-    },
-    {
-      icon: UsersIcon,
-      title: "Team Support",
-      items: [
-        "Facilitate team collaboration",
-        "Automate task assignments",
-        "Track project progress",
-      ],
-    },
-    {
-      icon: CpuIcon,
-      title: "Technical Tasks",
-      items: [
-        "Handle data processing",
-        "Manage system integrations",
-        "Automate technical workflows",
-      ],
-    },
-  ];
+  // const capabilities = [
+  //   {
+  //     icon: HeadphonesIcon,
+  //     title: "Customer Interaction",
+  //     items: [
+  //       "Handle support calls 24/7",
+  //       "Process customer inquiries",
+  //       "Manage email communications",
+  //     ],
+  //   },
+  //   {
+  //     icon: LineChartIcon,
+  //     title: "Business Operations",
+  //     items: [
+  //       "Automate workflow processes",
+  //       "Generate reports automatically",
+  //       "Monitor KPIs in real-time",
+  //     ],
+  //   },
+  //   {
+  //     icon: UsersIcon,
+  //     title: "Team Support",
+  //     items: [
+  //       "Facilitate team collaboration",
+  //       "Automate task assignments",
+  //       "Track project progress",
+  //     ],
+  //   },
+  //   {
+  //     icon: CpuIcon,
+  //     title: "Technical Tasks",
+  //     items: [
+  //       "Handle data processing",
+  //       "Manage system integrations",
+  //       "Automate technical workflows",
+  //     ],
+  //   },
+  // ];
 
   const videoShowcase = [
     {
@@ -121,7 +121,7 @@ export function Features(
             viewport={{ once: true }}
             className="text-3xl font-bold tracking-tight mb-6"
           >
-            Lumio Use Cases
+            Our Solutions
           </motion.h2>
         </div>
 
@@ -185,7 +185,7 @@ export function Features(
         </motion.div>
 
         {/* New Capabilities Section */}
-        <div className="mt-20">
+        {/* <div className="mt-20">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{
@@ -300,7 +300,7 @@ export function Features(
               </motion.div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* AI Action Section */}
         {/* <div className="pt-20" id="demo">
