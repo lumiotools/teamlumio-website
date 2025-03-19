@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { VoiceAgentModal } from "@/components/home/voice-agent-modal";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import HeroBackground from "./herobackground";
 
 export function Hero({
   // setIsChatBotOpen,
@@ -17,7 +16,7 @@ export function Hero({
 
   return (
     <div className="relative overflow-hidden min-h-[calc(100vh-4rem)]">
-      <HeroBackground />
+      {/* <HeroBackground /> */}
       <div className="container px-4 h-full flex items-center min-h-[calc(100vh-4rem)]">
         <div className="flex flex-col items-center text-center gap-8 sm:gap-12 max-w-4xl mx-auto">
           {/* <div
@@ -61,7 +60,7 @@ export function Hero({
               ease: "easeOut",
             }}
             viewport={{ once: true }}
-            className="text-lg sm:text-xl text-muted-foreground max-w-[52rem]"
+            className="text-lg sm:text-xl text-[#757575] drop-shadow-md shadow-[#cdd0ce] max-w-[52rem]"
           >
             Lumio makes AI accessible, practical, and built for growth—delivering high-quality, high-impact solutions with competitive turnaround times and measurable ROI.
           </motion.p>

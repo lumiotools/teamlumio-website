@@ -130,7 +130,7 @@ export default function Blogs() {
               onClick={() => handleBlogClick(post.id)}
               id={`bqigeb_${index}`}
             >
-              <Card className="overflow-hidden border-none shadow-none cursor-pointer group">
+              <Card className="overflow-hidden shadow-none cursor-pointer group border-4 border-transparent hover:border-primary hover:scale-105 transition-all ease-in-out duration-300">
                 <CardContent className="p-0" id={`lcdfb0_${index}`}>
                   <div
                     className="relative  overflow-hidden rounded-lg mb-4"
@@ -143,7 +143,7 @@ export default function Blogs() {
                       id={`gogf6t_${index}`}
                     />
                   </div>
-                  <div className="space-y-2" id={`t2exey_${index}`}>
+                  <div className="space-y-2 px-6 pb-6" id={`t2exey_${index}`}>
                     <p
                       className="text-sm text-muted-foreground"
                       id={`2j8nwh_${index}`}

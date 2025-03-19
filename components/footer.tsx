@@ -1,9 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import XIcon from "@/public/XIcon";
 import { cn } from "@/lib/utils";
 import { handleLinkClick } from "@/utils/handleLinkClick";
-import { Facebook, LinkedinIcon } from "lucide-react";
 import { Ubuntu } from "next/font/google";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -67,15 +65,15 @@ export function Footer() {
       // { name: "Twitter", icon: TwitterIcon },
       {
         name: "LinkedIn",
-        icon: LinkedinIcon,
+        icon: "/images/icons/linkedin.png",
         href: "https://www.linkedin.com/company/lumio-ai/",
       },
       {
         name: "Facebook",
-        icon: Facebook,
+        icon: "/images/icons/facebook.png",
         href: "https://www.facebook.com/profile.php?id=61572705287113",
       },
-      { name: "Twitter", icon: XIcon, href: "https://x.com/TeamLumioAI" },
+      { name: "Twitter", icon: "/images/icons/twitter.png", href: "https://x.com/TeamLumioAI" },
     ],
 
     certificate: [
@@ -115,20 +113,20 @@ export function Footer() {
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-1/3">
               <div className="flex items-center gap-2 mb-4">
-                <div className="h-8 w-8">
-                  <img src="/images/logos/Lumio AI.png" />
-                </div>
-                <span
-                  className={`text-xl font-bold text-primary ${ubuntu.className}`}
-                >
-                  Lumio AI
-                </span>
+              <div className="size-12">
+              <img src="/images/logos/lumio-logo-v2.png" />
+            </div>
+            <span
+              className={`text-2xl font-medium text-primary ${ubuntu.className}`}
+            >
+              Lumio AI
+            </span>
               </div>
-              <p className="text-muted-foreground mb-4 max-w-sm">
+              {/* <p className="text-muted-foreground mb-4 max-w-sm">
                 Empowering businesses with intelligent AI workers for a more
                 productive and efficient future.
-              </p>
-              <div className="flex gap-4">
+              </p> */}
+              <div className="flex gap-3 pl-6">
                 {links.social.map((social, index) => (
                   <Link
                     key={social.name}
@@ -137,7 +135,8 @@ export function Footer() {
                     target="_blank"
                   >
                     <Button variant="ghost" size="icon">
-                      <social.icon className="h-5 w-5" id={`s19iip_${index}`} />
+                      {/* <social.icon className="size-12" id={`s19iip_${index}`} /> */}
+                      <img src={social.icon}/>
                     </Button>
                   </Link>
                 ))}

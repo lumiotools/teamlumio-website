@@ -23,7 +23,7 @@ export function Header() {
     { label: "About Us", href: "/about-us" },
     { label: "Methodology", href: "/methodology" },
     // { label: "Solutions", href: "/#features" },
-    { label: "Testimonials", href: "/testimonials" },
+    { label: "Case Studies", href: "/case-studies" },
     { label: "Blogs", href: "/blogs" },
     { label: "Careers", href: "/careers" },
     // { label: "Demo Lumio Tools" , href:'/#demo'}

@@ -70,9 +70,9 @@ const HeroBackground: React.FC = () => {
       time += 0.015;
 
       // Draw morphing blobs
-      drawBlob(canvas.width * 0.2, canvas.height * 0.3, 150, 'rgba(79, 70, 229,', time * 1.4, 0.10);
-      drawBlob(canvas.width * 0.8, canvas.height * 0.7, 200, 'rgba(124, 58, 237,', time * 1.2, 0.10);
-      drawBlob(canvas.width * 0.5, canvas.height * 0.5, 180, 'rgba(236, 72, 153,', time * 1.5, 0.10);
+      drawBlob(canvas.width * 0.2, canvas.height * 0.3, 150, 'rgba(0, 33, 105,', time * 1.4, 0.10);
+      drawBlob(canvas.width * 0.8, canvas.height * 0.7, 200, 'rgba(0, 33, 105,', time * 1.2, 0.10);
+      drawBlob(canvas.width * 0.5, canvas.height * 0.5, 180, 'rgba(0, 33, 105,', time * 1.5, 0.10);
 
       animationFrameId = requestAnimationFrame(animate);
     };
