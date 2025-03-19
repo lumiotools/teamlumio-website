@@ -179,7 +179,7 @@ export function Testimonials() {
                   viewport={{ once: true }}
                   className="w-[520px]"
                 >
-                  <Card className="bg-background flex flex-col h-full border-4 border-transparent hover:border-primary hover:scale-105 transition-all ease-in-out duration-300">
+                  <Card className="flex flex-col h-full border-4 border-transparent hover:border-primary hover:scale-105 transition-all ease-in-out duration-300">
                     <CardContent className="pt-6 flex flex-col h-full">
                       <div className="flex flex-col flex-grow">
                         <p className="text-md sm:text-lg mb-3 text-justify">
@@ -188,7 +188,7 @@ export function Testimonials() {
                       </div>
                       {testimonial.video && (
                         <Link
-                          href={`/?testimonialVideo=${index}#testimonials`}
+                          href={`/case-studies?testimonialVideo=${index}`}
                           className="flex justify-center mb-6"
                           id={`4b4ub6_${index}`}
                         >
