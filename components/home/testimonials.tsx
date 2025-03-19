@@ -19,7 +19,7 @@ export function Testimonials() {
     if (activeTestimonialVideo) {
       const testimonial = TESTIMONIALS[parseInt(activeTestimonialVideo)];
       if (!testimonial || !testimonial.video) {
-        router.replace("/#testimonials");
+        router.replace("/case-studies");
       } else {
         setActiveVideo(testimonial.video);
       }
@@ -73,12 +73,12 @@ export function Testimonials() {
       open={!!activeVideo}
       onOpenChange={(isOpen) => {
         if (!isOpen) {
-          router.replace("/#testimonials");
+          router.replace("/case-studies");
           setActiveVideo(null);
         }
       }}
     >
-      <section className="py-20" id="testimonials">
+      <section className="py-20">
         <div className="container px-4">
           <motion.div
             initial={{ opacity: 0, y: 150 }}
