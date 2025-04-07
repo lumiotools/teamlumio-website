@@ -35,8 +35,7 @@ export default function TermsOfService() {
               <p className="text-muted-foreground text-justify">
                 Lumio AI specializes in delivering AI-driven solutions,
                 including automation, predictive analytics, chatbots, and
-                process optimization, tailored for small and mid-sized
-                businesses.
+                process optimization, tailored for businesses.
               </p>
             </section>
 

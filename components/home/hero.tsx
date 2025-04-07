@@ -48,8 +48,7 @@ export function Hero({
             viewport={{ once: true }}
             className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight "
           >
-            <span className="text-primary ">Custom AI Workers</span> for Small
-            Businesses
+            <span className="text-primary ">Custom AI Workers</span> for Businesses
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 100 }}

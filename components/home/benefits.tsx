@@ -19,9 +19,9 @@ export function Benefits() {
     },
     {
       icon: BuildingIcon,
-      title: "Specifically for Small & Mid-Sized Businesses",
+      title: "Specifically for Businesses",
       description:
-        "Unlike big consulting firms that focus on enterprises, we specialize in SMBs. We understand your challenges—tight budgets, limited resources, and the need for fast ROI—so we make AI accessible and easy to integrate.",
+        "Unlike big consulting firms that focus on enterprises, we specialize in businesses. We understand your challenges—tight budgets, limited resources, and the need for fast ROI—so we make AI accessible and easy to integrate.",
     },
     {
       icon: BrainIcon,
@@ -42,7 +42,7 @@ export function Benefits() {
       icon: UsersIcon,
       title: "U.S.-Based Sales & Global Engineering Excellence",
       description:
-        "We combine local expertise with global talent—a U.S.-based sales and consulting team that understands the SMB market, supported by a team of experienced AI engineers delivering high-quality, cost-effective AI solutions.",
+        "We combine local expertise with global talent—a U.S.-based sales and consulting team that understands the market, supported by a team of experienced AI engineers delivering high-quality, cost-effective AI solutions.",
     },
   ];
 

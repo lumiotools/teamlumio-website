@@ -14,11 +14,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Lumio AI",
-  description: "Discover how Lumio AI provides custom AI workers to transform small businesses, ensuring guaranteed ROI through intelligent automation and tailored solutions.",
-  keywords: ["Custom AI solutions", "AI for small businesses", "intelligent automation", "AI workers", "Lumio AI"],
+  description: "Discover how Lumio AI provides custom AI workers to transform businesses, ensuring guaranteed ROI through intelligent automation and tailored solutions.",
+  keywords: ["Custom AI solutions", "AI for businesses", "intelligent automation", "AI workers", "Lumio AI"],
   openGraph: {
     title: "Lumio AI",
-    description: "Discover how Lumio AI provides custom AI workers to transform small businesses, ensuring guaranteed ROI through intelligent automation and tailored solutions.",
+    description: "Discover how Lumio AI provides custom AI workers to transform businesses, ensuring guaranteed ROI through intelligent automation and tailored solutions.",
     url: "https://www.teamlumio.ai/",
     type: "website",
   },

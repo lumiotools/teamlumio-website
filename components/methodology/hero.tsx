@@ -29,13 +29,13 @@ export const MethodologyHero = () => {
               <span className="mr-2">DROP™</span>Framework
             </Badge>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight max-w-4xl mx-auto leading-tight">
-              Empowering Small Businesses with AI: The DROP
+              Empowering Businesses with AI: The DROP
               <span className="mr-2 font-normal align-top text-lg">TM</span>
               Framework by Lumio AI
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               A structured approach that ensures AI integration is simple,
-              effective, and delivers real business value for small businesses.
+              effective, and delivers real business value for businesses.
             </p>
             <div className="flex flex-wrap gap-4 justify-center pt-4">
               <Link

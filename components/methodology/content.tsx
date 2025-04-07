@@ -16,7 +16,7 @@ export const MethodologyContent = () => {
       title: "Data Aggregation",
       icon: DatabaseIcon,
       description: [
-        "For small businesses, managing data from multiple tools—such as customer databases, invoicing systems, and sales reports—can be overwhelming. Our Custom AI Workers seamlessly connect with any digital data source, including CRM tools, e-commerce platforms, cloud apps, and even spreadsheets, to gather critical business data automatically.",
+        "For businesses, managing data from multiple tools—such as customer databases, invoicing systems, and sales reports—can be overwhelming. Our Custom AI Workers seamlessly connect with any digital data source, including CRM tools, e-commerce platforms, cloud apps, and even spreadsheets, to gather critical business data automatically.",
         "We don't just integrate data; we ensure that the AI Worker understands the unique context of your business, organizing customer interactions, sales trends, and operational data in a way that makes AI-driven automation relevant and useful.",
       ],
     },
@@ -26,7 +26,7 @@ export const MethodologyContent = () => {
       title: "Refinement",
       icon: FilterIcon,
       description: [
-        "Raw data from different sources is often messy or inconsistent. The Refinement phase ensures that the AI Worker processes data correctly, eliminating duplicates, errors, and irrelevant information. By applying smart filters, automation rules, and industry-specific AI knowledge, Lumio AI helps small businesses:",
+        "Raw data from different sources is often messy or inconsistent. The Refinement phase ensures that the AI Worker processes data correctly, eliminating duplicates, errors, and irrelevant information. By applying smart filters, automation rules, and industry-specific AI knowledge, Lumio AI helps businesses:",
       ],
 
       bullets: [
@@ -42,7 +42,7 @@ export const MethodologyContent = () => {
       icon: PlayIcon,
       description: [
         "Once the data is refined, the AI Worker performs its processing before generating any output. This includes using deterministic rule-based algorithms, custom machine learning models, and Large Language Models (LLMs) to extract insights, automate decision-making, and enhance workflows.",
-        "We leverage LLMs (Large Language Models), predictive analytics, and automated workflows to help small businesses:",
+        "We leverage LLMs (Large Language Models), predictive analytics, and automated workflows to help businesses:",
       ],
 
       bullets: [
@@ -57,8 +57,8 @@ export const MethodologyContent = () => {
       title: "Presentation & Action",
       icon: PresentationIcon,
       description: [
-        "Small business owners don't have time to analyze complex AI reports. That's why the Presentation & Action phase focuses on delivering clear, simple, and actionable insights in a user and workflow-friendly manner, on any channel of their choice.",
-        "Lumio AI ensures that small businesses can:",
+        "Business owners don't have time to analyze complex AI reports. That's why the Presentation & Action phase focuses on delivering clear, simple, and actionable insights in a user and workflow-friendly manner, on any channel of their choice.",
+        "Lumio AI ensures that businesses can:",
       ],
 
       bullets: [
@@ -87,18 +87,18 @@ export const MethodologyContent = () => {
       >
         <h2 className="text-3xl font-bold">Introduction</h2>
         <p className="text-lg text-muted-foreground leading-relaxed text-justify">
-          Small businesses today face growing challenges in managing operations
+          Businesses today face growing challenges in managing operations
           efficiently, keeping up with technology, and staying competitive. At
-          Lumio AI, we specialize in Custom AI Workers that help small
+          Lumio AI, we specialize in Custom AI Workers that help
           businesses streamline workflows, reduce manual tasks, and enhance
-          decision-making without requiring a dedicated IT team. To guide small
+          decision-making without requiring a dedicated IT team. To guide
           businesses through AI adoption, we introduce the DROP
           <span className="mr-2 font-normal">™</span>Framework—a structured
           approach that ensures AI integration is simple, effective, and
           delivers real business value. DROP
           <span className="mr-2 font-normal">™</span>stands for Data
           Aggregation, Refinement, Operation, and Presentation & Action, a
-          step-by-step methodology tailored for small business needs.
+          step-by-step methodology tailored for business needs.
         </p>
       </motion.section>
 
@@ -122,7 +122,7 @@ export const MethodologyContent = () => {
         </h2>
         <p className="text-lg text-justify text-muted-foreground leading-relaxed">
           The DROP<span className="mr-2 font-normal">™</span>Framework is
-          designed specifically for small businesses looking to harness AI for
+          designed specifically for businesses looking to harness AI for
           automation and smarter decision-making. Each phase ensures that AI is
           easy to implement, adaptable, and provides immediate benefits.
         </p>
@@ -206,16 +206,16 @@ export const MethodologyContent = () => {
         className="max-w-4xl mx-auto space-y-6"
       >
         <h2 className="text-3xl font-bold">
-          The Role of DROP<span className="mr-2 font-normal">™</span>in Small
+          The Role of DROP<span className="mr-2 font-normal">™</span>in
           Business AI Adoption
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed text-justify">
           With the DROP<span className="mr-2 font-normal">™</span>Framework,
-          small businesses can integrate AI into their workflows without the
+          businesses can integrate AI into their workflows without the
           need for extensive technical expertise or expensive enterprise
           solutions. Whether it&apos;s automating tasks, improving customer
           engagement, or making data-driven decisions, AI is now accessible and
-          practical for small business owners.
+          practical for business owners.
         </p>
       </motion.section>
     </div>

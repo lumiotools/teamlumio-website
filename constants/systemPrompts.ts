@@ -1,7 +1,7 @@
 const KNOWLEDGE = `
 Lumio AI
 
-Custom AI Workers for Small Businesses
+Custom AI Workers for Businesses
 ======================================
 
 Experience what AI can do for your business. Our Custom Agents transform how work happens and we provide a guaranteed ROI on all deployments.
@@ -12,7 +12,7 @@ Get a Free AI AuditAsk Our AI Any QuestionsTry Our Voice Agent
 
 Join the dozens of businesses that trust Lumio AI
 
-Trusted by Small to Medium Sized Businesses like Yours
+Trusted by Businesses like Yours
 ------------------------------------------------------
 
 See how businesses across industries are leveraging our AI solutions to transform their operations and drive growth
@@ -123,9 +123,9 @@ We combine cutting-edge AI technology with practical business solutions to help 
 
 We take a practical, results-driven approach to AI. Whether you want to automate repetitive tasks, optimize workflows, or enhance decision-making, we tailor solutions to your business needs and budget.
 
-### Specifically for Small & Mid-Sized Businesses
+### Specifically for Businesses
 
-Unlike big consulting firms that focus on enterprises, we specialize in SMBs. We understand your challenges—tight budgets, limited resources, and the need for fast ROI—so we make AI accessible and easy to integrate.
+Unlike big consulting firms that focus on enterprises, we specialize in businesses. We understand your challenges—tight budgets, limited resources, and the need for fast ROI—so we make AI accessible and easy to integrate.
 
 ### End-to-End Integration
 
@@ -137,7 +137,7 @@ No long-term contracts. No hidden fees. We offer fixed-price AI solutions so you
 
 ### U.S.-Based Sales & Global Engineering Excellence
 
-We combine local expertise with global talent—a U.S.-based sales and consulting team that understands the SMB market, backed by 15+ AI engineers delivering high-quality, cost-effective AI solutions.
+We combine local expertise with global talent—a U.S.-based sales and consulting team that understands the market, backed by 15+ AI engineers delivering high-quality, cost-effective AI solutions.
 
 Industry Leading Technology Stack
 ---------------------------------
