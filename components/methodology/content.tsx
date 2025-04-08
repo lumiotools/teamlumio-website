@@ -122,7 +122,7 @@ export const MethodologyContent = () => {
         </h2>
         <p className="text-lg text-justify text-muted-foreground leading-relaxed">
           The DROP<span className="mr-2 font-normal">™</span>Framework is
-          designed specifically for businesses looking to harness AI for
+          designed specifically for small businesses looking to harness AI for
           automation and smarter decision-making. Each phase ensures that AI is
           easy to implement, adaptable, and provides immediate benefits.
         </p>

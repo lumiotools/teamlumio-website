@@ -123,7 +123,7 @@ We combine cutting-edge AI technology with practical business solutions to help 
 
 We take a practical, results-driven approach to AI. Whether you want to automate repetitive tasks, optimize workflows, or enhance decision-making, we tailor solutions to your business needs and budget.
 
-### Specifically for Businesses
+### Specifically for Mid-Sized Businesses
 
 Unlike big consulting firms that focus on enterprises, we specialize in businesses. We understand your challenges—tight budgets, limited resources, and the need for fast ROI—so we make AI accessible and easy to integrate.
 

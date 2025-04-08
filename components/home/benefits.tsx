@@ -19,9 +19,9 @@ export function Benefits() {
     },
     {
       icon: BuildingIcon,
-      title: "Specifically for Businesses",
+      title: "Specifically for Mid-Sized Businesses",
       description:
-        "Unlike big consulting firms that focus on enterprises, we specialize in businesses. We understand your challenges—tight budgets, limited resources, and the need for fast ROI—so we make AI accessible and easy to integrate.",
+        "Unlike big consulting firms that focus on enterprises, we specialize in mid-sized businesses. We understand your challenges—tight budgets, limited resources, and the need for fast ROI—so we make AI accessible and easy to integrate.",
     },
     {
       icon: BrainIcon,
