@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-// import { ArrowRightIcon, MessageSquare, Mic } from "lucide-react";
+import { ArrowRightIcon, MessageSquare, Mic } from "lucide-react";
 import { VoiceAgentModal } from "@/components/home/voice-agent-modal";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 export function Hero({
-  // setIsChatBotOpen,
+  setIsChatBotOpen,
 }: {
   setIsChatBotOpen: (isOpen: boolean) => void;
 }) {
@@ -90,7 +90,7 @@ export function Hero({
               </Button>
             </Link>
             {/* <div className="flex flex-col md:flex-row items-center gap-4">
-              {/* <Link  
+            <Link  
               href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing"
               target="_blank"
               >
@@ -98,7 +98,7 @@ export function Hero({
               <Button size="lg" variant="outline" className="w-[250px]">
                 Get Your Free AI Audit
               </Button>
-              </Link> /}
+              </Link>
               <Button onClick={() => setIsChatBotOpen(true)} size="lg" variant="outline" className="w-[250px]">
                 Ask Lumio AI Questions
               </Button>
@@ -110,7 +110,7 @@ export function Hero({
               >
                 Try our Lumio AI Voice Agent
               </Button>
-              {/* <Button
+               <Button
                 variant="outline"
                 className="border-2 border-primary text-primary hover:bg-primary hover:text-white w-[250px]  transition-transform hover:scale-105"
                 size="lg"
@@ -128,8 +128,8 @@ export function Hero({
                 <Mic className="mr-0 h-5 w-5" />
                 Try our Lumio AI Voice Agent
               </Button> *
-              </div> */}
-              {/* <div className="" id="demo">
+              </div>  */}
+              <div className="" id="demo">
                 <motion.div
                   initial={{ opacity: 0, y: 100 }} // Starts below the screen with zero opacity
                   whileInView={{
@@ -169,7 +169,7 @@ export function Hero({
                     </div>
                   </div>
                 </motion.div>
-              </div> */}
+              </div>
           </motion.div>
           {/* <motion.div
             initial={{ opacity: 0, y: 100 }}

@@ -39,7 +39,7 @@ export const MethodologyHero = () => {
             </h1>
             {/* <p className="text-2xl sm:text-3xl md:text-4xl mt-2 font-medium tracking-tight max-w-4xl mx-auto leading-tight">Empowering SMBs with AI</p> */}
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            The DROP™ Framework empowers SMBs to integrate AI into their workflows without requiring extensive technical expertise or costly enterprise solutions. Whether it&apos;s automating tasks, enhancing customer engagement, or making data-driven decisions, AI is now more accessible and practical for SMB owners.
+            The DROP™ Framework empowers your Business to integrate AI into their workflows without requiring extensive technical expertise or costly enterprise solutions. Whether it&apos;s automating tasks, enhancing customer engagement, or making data-driven decisions, AI is now more accessible and practical for business owners.
             {/* <br/>
             <br/>
             Our structured approach ensures seamless and effective AI adoption, delivering tangible business value and enabling SMBs to stay competitive in an increasingly digital landscape */}

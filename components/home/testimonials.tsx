@@ -94,10 +94,10 @@ export function Testimonials() {
             className="text-center max-w-4xl mx-auto mb-16"
           >
             <h2 className="text-3xl font-bold tracking-tight mb-4">
-              Trusted by SMBs like Yours
+              Trusted by Businesses like Yours
             </h2>
             <p className="text-lg  text-muted-foreground">
-              Businesses across industries trust Lumio AI to optimize sales,
+              Businesses across industries engage Lumio AI to optimize sales,
               manufacturing, and operational workflows.
             </p>
           </motion.div>
@@ -161,6 +161,27 @@ export function Testimonials() {
             ))}
           </div>
 
+          <motion.div
+            initial={{ opacity: 0, y: 150 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 1,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true }}
+            className="text-center max-w-4xl mx-auto mb-8"
+          >
+            <h2 className="text-3xl font-bold tracking-tight mb-4">
+              Testimonials
+            </h2>
+            <p className="text-lg  text-muted-foreground italic">
+            Here's what our partners are saying about the impact of Lumio AI
+            </p>
+          </motion.div>
+
           <div className="overflow-x-auto pb-6">
             <div className="flex gap-8 min-w-max p-4">
               {TESTIMONIALS.map((testimonial, index) => (
@@ -194,7 +215,7 @@ export function Testimonials() {
                         >
                           <Button
                             variant="outline"
-                            className="w-full flex items-center gap-2 !bg-[#e5e4ec8a]"
+                            className="w-full flex items-center gap-2 !bg-primary/10"
                             size="lg"
                             id={`p3ge29_${index}`}
                           >
