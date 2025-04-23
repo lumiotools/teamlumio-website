@@ -54,7 +54,6 @@ export function CTA() {
                 </Link> */}
                 <Link
                   href="/book-consultation"
-                  target="_blank"
                 >
                   <Button
                     size="lg"

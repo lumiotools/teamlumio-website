@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const BookConsultationPage = () => {
   return (
-    <div className="max-w-screen-xl mx-auto px-4 py-20 flex gap-8">
+    <div className="max-w-screen-xl mx-auto px-4 py-20 flex flex-col md:flex-row gap-8">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{

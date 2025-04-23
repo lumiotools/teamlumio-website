@@ -73,7 +73,6 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-4">
           <Link
             href="/book-consultation"
-            target="_blank"
           >
             <Button className="px-6">Book Your Free AI Consultation</Button>
           </Link>
@@ -106,7 +105,6 @@ export function Header() {
             <div className="flex flex-col gap-2 pt-4 border-t">
             <Link
             href="/book-consultation"
-            target="_blank"
           >
             <Button>Get Your Free AI Consultation</Button>
           </Link>

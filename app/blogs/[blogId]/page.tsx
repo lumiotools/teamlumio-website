@@ -211,7 +211,6 @@ export default function BlogPost() {
                 
                 <Link
               href="/book-consultation"
-              target="_blank"
             >
               <Button size="lg" className="rounded-full">
                 Book a Free Consultation

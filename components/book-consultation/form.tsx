@@ -111,6 +111,7 @@ const BookConsultationForm = () => {
         });
       }
     } catch (error) {
+      console.log(error)
       toast({
         description: "An error occurred while submitting the form.",
         variant: "destructive",

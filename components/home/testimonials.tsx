@@ -178,7 +178,7 @@ export function Testimonials() {
               Testimonials
             </h2>
             <p className="text-lg  text-muted-foreground italic">
-            Here's what our partners are saying about the impact of Lumio AI
+            Here&apos;s what our partners are saying about the impact of Lumio AI
             </p>
           </motion.div>
 

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon, MessageSquare, Mic } from "lucide-react";
+import { MessageSquare, Mic } from "lucide-react";
 import { VoiceAgentModal } from "@/components/home/voice-agent-modal";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -81,8 +81,6 @@ export function Hero({
           >
             <Link
               href="/book-consultation"
-              target="_blank"
-              className="w-full"
             >
               <Button size="lg" className="w-[320px] h-14 text-lg">
                 Book Your Free AI Consultation
@@ -92,7 +90,6 @@ export function Hero({
             {/* <div className="flex flex-col md:flex-row items-center gap-4">
             <Link  
               href="/book-consultation"
-              target="_blank"
               >
 
               <Button size="lg" variant="outline" className="w-[250px]">

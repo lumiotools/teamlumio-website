@@ -136,7 +136,6 @@ export function HowItWorks() {
                   </div>
                   <Link
                     href="/book-consultation"
-                    target="_blank"
                   >
                     <Button
                       size="lg"

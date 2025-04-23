@@ -56,7 +56,6 @@ export const MethodologyHero = () => {
             {/* <div className="flex flex-wrap gap-4 justify-center pt-4"> */}
               {/* <Link
                 href="/book-consultation"
-                target="_blank"
               >
                 <Button size="lg" className="w-full">
                   Book a Free AI Consultation Today
