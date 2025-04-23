@@ -41,16 +41,16 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="w-full px-8 flex h-16 items-center justify-between">
         {/* <div className="flex items-center  justify-center gap-8"> */}
-        <Link
+          <Link
             href="/"
-            className="flex items-center gap-2 cursor-pointer"
+            className="flex justify-center items-center gap-2 cursor-pointer"
             onClick={(e) => handleNavClick("/", e)}
           >
-            <div className="h-8 w-8">
-              <img src="/images/logos/Lumio AI.png" />
+            <div className="size-12">
+              <img src="/images/logos/lumio-logo-v2.png" />
             </div>
             <span
-              className={`text-xl font-bold text-primary ${ubuntu.className}`}
+              className={`text-2xl font-medium text-primary ${ubuntu.className}`}
             >
               Lumio AI
             </span>

@@ -113,13 +113,13 @@ export function Footer() {
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-1/3">
               <div className="flex items-center gap-2 mb-4">
-                <div className="h-8 w-8">
-                  <img src="/images/logos/Lumio AI.png" />
-                </div>
-                <span
-                  className={`text-xl font-bold text-primary ${ubuntu.className}`}
-                >
-                  Lumio AI
+                <div className="size-12">
+                <img src="/images/logos/lumio-logo-v2.png" />
+              </div>
+              <span
+                className={`text-2xl font-medium text-primary ${ubuntu.className}`}
+              >
+                Lumio AI
                 </span>
               </div>
               {/* <p className="text-muted-foreground mb-4 max-w-sm">
