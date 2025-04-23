@@ -41,16 +41,16 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="w-full px-8 flex h-16 items-center justify-between">
         {/* <div className="flex items-center  justify-center gap-8"> */}
-          <Link
+        <Link
             href="/"
-            className="flex justify-center items-center gap-2 cursor-pointer"
+            className="flex items-center gap-2 cursor-pointer"
             onClick={(e) => handleNavClick("/", e)}
           >
-            <div className="size-12">
-              <img src="/images/logos/lumio-logo-v2.png" />
+            <div className="h-8 w-8">
+              <img src="/images/logos/Lumio AI.png" />
             </div>
             <span
-              className={`text-2xl font-medium text-primary ${ubuntu.className}`}
+              className={`text-xl font-bold text-primary ${ubuntu.className}`}
             >
               Lumio AI
             </span>
@@ -72,7 +72,7 @@ export function Header() {
           </nav>
           <div className="hidden lg:flex items-center gap-4">
           <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing"
+            href="/book-consultation"
             target="_blank"
           >
             <Button className="px-6">Book Your Free AI Consultation</Button>
@@ -105,7 +105,7 @@ export function Header() {
             ))}
             <div className="flex flex-col gap-2 pt-4 border-t">
             <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing"
+            href="/book-consultation"
             target="_blank"
           >
             <Button>Get Your Free AI Consultation</Button>

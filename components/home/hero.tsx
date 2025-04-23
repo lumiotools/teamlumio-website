@@ -80,7 +80,7 @@ export function Hero({
             className="flex flex-col items-center gap-5 w-full"
           >
             <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing "
+              href="/book-consultation"
               target="_blank"
               className="w-full"
             >
@@ -91,7 +91,7 @@ export function Hero({
             </Link>
             {/* <div className="flex flex-col md:flex-row items-center gap-4">
             <Link  
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing"
+              href="/book-consultation"
               target="_blank"
               >
 

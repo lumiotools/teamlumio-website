@@ -135,7 +135,7 @@ export function HowItWorks() {
                     </p>
                   </div>
                   <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing"
+                    href="/book-consultation"
                     target="_blank"
                   >
                     <Button

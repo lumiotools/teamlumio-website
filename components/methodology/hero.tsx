@@ -55,7 +55,7 @@ export const MethodologyHero = () => {
         </p> */}
             {/* <div className="flex flex-wrap gap-4 justify-center pt-4"> */}
               {/* <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfiMB-IkhNT95tBWyC6du56ENayUlBPEZ4G6QGa5s3aEYKsNw/viewform?usp=sharing"
+                href="/book-consultation"
                 target="_blank"
               >
                 <Button size="lg" className="w-full">
