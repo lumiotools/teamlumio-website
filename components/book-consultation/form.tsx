@@ -370,12 +370,14 @@ const BookConsultationForm = () => {
                 to book a call with us.
               </p>
               <Label htmlFor="bookingDate" className="text-sm font-medium">
-                What date did you book your call with us for?
+                What date did you book your call with us for?{" "}
+                <span className="text-red-500">*</span>
               </Label>
               <Input
                 id="bookingDate"
                 name="bookingDate"
                 type="date"
+                required
                 value={formData.bookingDate}
                 onChange={handleChange}
               />
